@@ -1,0 +1,51 @@
+{
+  "name": "wx-vue-monorepo",
+  "version": "0.0.0",
+  "private": true,
+  "description": "wx-vue next monorepo",
+  "license": "MIT",
+  "author": "Alex Wei<https://github.com/alex8088>",
+  "scripts": {
+    "preinstall": "npx only-allow pnpm",
+    "format": "prettier --write .",
+    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
+    "typecheck": "vue-tsc --noEmit"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "npx lint-staged",
+    "commit-msg": "npx commit-lint $1"
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier --write"
+    ],
+    "*.ts?(x)": [
+      "eslint",
+      "prettier --parser=typescript --write"
+    ]
+  },
+  "devDependencies": {
+    "@alexwei/commit-lint": "^1.0.0",
+    "@rushstack/eslint-patch": "^1.1.3",
+    "@types/node": "^16.11.27",
+    "@vitejs/plugin-vue": "^2.3.3",
+    "@vue/eslint-config-prettier": "^7.0.0",
+    "@vue/eslint-config-typescript": "^10.0.0",
+    "eslint": "^8.16.0",
+    "eslint-plugin-vue": "^9.0.1",
+    "lint-staged": "^12.4.3",
+    "prettier": "^2.6.2",
+    "simple-git-hooks": "^2.8.0",
+    "typescript": "~4.6.3",
+    "vite": "^2.9.9",
+    "vue": "^3.2.36",
+    "vue-tsc": "^0.35.0"
+  },
+  "pnpm": {
+    "peerDependencyRules": {
+      "allowedVersions": {
+        "eslint-plugin-vue": "9"
+      }
+    }
+  }
+}

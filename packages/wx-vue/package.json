@@ -1,0 +1,31 @@
+{
+  "name": "wx-vue",
+  "version": "3.0.0",
+  "description": "A Vue3 Mobile UI components library based on the WeUI Design",
+  "author": "Alex Wei<https://github.com/alex8088>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alex8088/wx-vue-next.git",
+    "directory": "packages/wx-vue"
+  },
+  "bugs": {
+    "url": "https://github.com/alex8088/wx-vue-next/issues"
+  },
+  "homepage": "https://alex8088.github.io/wx-vue-next/docs/",
+  "keywords": [
+    "wx-vue",
+    "weui",
+    "vue",
+    "vue components",
+    "mobile",
+    "mobile ui",
+    "ui",
+    "ui framework"
+  ],
+  "scripts": {
+  },
+  "peerDependencies": {
+    "vue": "^3.2.0"
+  }
+}
