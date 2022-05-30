@@ -5,10 +5,10 @@
   <h1>wx-vue</h1>
 </div>
 
-<h3 align="center">A Vue.js 3 Mobile UI components library based on the WeUI Design</h3>
+<p align="center">A Vue.js 3 Mobile UI components library based on the WeUI Design</p>
 
 <p align="center">
-<img src="https://img.shields.io/github/license/alex8088/wx-vue-next?style=flat-square" alt="license" />
+<img src="https://img.shields.io/github/license/alex8088/wx-vue-next?color=blue" alt="license" />
 </p>
 
 <p align="center">
