@@ -1,7 +1,7 @@
 {
   "name": "wx-vue",
   "version": "3.0.0",
-  "description": "A Vue3 Mobile UI components library based on the WeUI Design",
+  "description": "A Vue.js 3 Mobile UI components library based on the WeUI Design",
   "author": "Alex Wei<https://github.com/alex8088>",
   "license": "MIT",
   "repository": {

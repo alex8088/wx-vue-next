@@ -1,6 +1,6 @@
 # wx-vue
 
-> A Vue3 Mobile UI components library based on the WeUI Design
+> A Vue.js 3 Mobile UI components library based on the WeUI Design
 
 ---
 
