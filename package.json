@@ -9,7 +9,8 @@
     "preinstall": "npx only-allow pnpm",
     "format": "prettier --write .",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
-    "typecheck": "vue-tsc --noEmit"
+    "typecheck": "vue-tsc --noEmit",
+    "build:style": "pnpm run -C packages/wx-vue build:style"
   },
   "simple-git-hooks": {
     "pre-commit": "npx lint-staged",
@@ -33,6 +34,7 @@
     "@vue/eslint-config-typescript": "^10.0.0",
     "eslint": "^8.16.0",
     "eslint-plugin-vue": "^9.0.1",
+    "less": "^4.1.2",
     "lint-staged": "^12.4.3",
     "prettier": "^2.6.2",
     "simple-git-hooks": "^2.8.0",
