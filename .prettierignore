@@ -1,4 +1,5 @@
 packages/wx-vue/dist/
+packages/wx-vue/components/styles
 packages/demo/dist/
 packages/docs/.vitepress/dist/
 pnpm-lock.yaml
