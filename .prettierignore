@@ -1,4 +1,6 @@
 packages/wx-vue/dist/
+packages/wx-vue/es
+packages/wx-vue/lib
 packages/wx-vue/components/styles
 packages/demo/dist/
 packages/docs/.vitepress/dist/

@@ -1,4 +1,6 @@
-import { App, Plugin } from 'vue'
+import type { App, Plugin } from 'vue'
+
+export type WithInstallType<T> = T & Plugin
 
 export const withInstall = <T>(component: T): T & Plugin => {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any

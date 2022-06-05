@@ -1,8 +1,9 @@
-import { withInstall } from '../utils'
+import { withInstall, type WithInstallType } from '../utils'
 
 import Button from './button.vue'
 
-export const WxButton = withInstall(Button)
+export const WxButton: WithInstallType<typeof Button> = withInstall(Button)
+
 export default WxButton
 
 export type WxButtonInstance = InstanceType<typeof Button>

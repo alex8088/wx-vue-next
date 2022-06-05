@@ -3,7 +3,9 @@
   "version": "3.0.0",
   "description": "A Vue.js 3 Mobile UI components library based on the WeUI Design",
   "files": [
-    "dist"
+    "dist",
+    "es",
+    "lib"
   ],
   "author": "Alex Wei<https://github.com/alex8088>",
   "license": "MIT",
@@ -27,18 +29,22 @@
     "ui framework"
   ],
   "scripts": {
+    "build:component": "esno scripts/compile-component.ts",
     "build:style": "esno scripts/compile-style.ts"
   },
   "peerDependencies": {
     "vue": "^3.2.0"
   },
   "devDependencies": {
+    "@types/glob": "^7.2.0",
     "@types/less": "^3.0.3",
     "autoprefixer": "^10.4.7",
     "esbuild": "^0.14.42",
     "esno": "^0.16.3",
+    "glob": "^8.0.3",
     "picocolors": "^1.0.0",
     "postcss": "^8.4.14",
-    "postcss-discard-comments": "^5.1.2"
+    "postcss-discard-comments": "^5.1.2",
+    "ts-morph": "^15.1.0"
   }
 }

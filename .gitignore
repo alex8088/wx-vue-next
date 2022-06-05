@@ -6,6 +6,8 @@ pnpm-debug.log*
 
 # bundle
 dist
+packages/wx-vue/es
+packages/wx-vue/lib
 
 # editor
 .idea

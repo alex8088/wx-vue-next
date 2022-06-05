@@ -1,2 +1,4 @@
 node_modules
 dist
+packages/wx-vue/es
+packages/wx-vue/lib

@@ -1,4 +1,4 @@
-import { Plugin } from 'vue'
+import type { Plugin } from 'vue'
 import { WxButton } from './button'
 
 const components: Record<string, Plugin> = {
