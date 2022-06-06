@@ -7,6 +7,8 @@ import comments from 'postcss-discard-comments'
 import autoprefixer from 'autoprefixer'
 import { formatMessages, transform } from 'esbuild'
 
+import { copyStyles, genStyles } from './gen-component-style'
+
 async function compileLess(filePath: string): Promise<string> {
   const source = fs.readFileSync(filePath, { encoding: 'utf-8' })
 
@@ -47,29 +49,47 @@ async function compile(): Promise<void> {
   const cwd = process.cwd()
 
   const lessFile = path.join(cwd, 'components/styles/weui.less')
-
   const cssBundleName = 'wx-vue'
 
-  console.log(colors.green('compile style...'))
+  console.log(colors.green('compile style full...'))
 
-  try {
-    const code = await compileLess(lessFile)
+  const code = await compileLess(lessFile)
+  const css = await compileCss(code)
+  fs.writeFileSync(path.join(cwd, `dist/${cssBundleName}.css`), css)
 
-    const css = await compileCss(code)
+  console.log(colors.gray(`dist/${colors.cyan(`${cssBundleName}.css`)}`))
 
-    fs.writeFileSync(path.join(cwd, `dist/${cssBundleName}.css`), css)
+  const content = await minifyCss(code)
+  fs.writeFileSync(path.join(cwd, `dist/${cssBundleName}.min.css`), content)
 
-    const content = await minifyCss(code)
+  console.log(colors.gray(`dist/${colors.cyan(`${cssBundleName}.min.css`)}`))
 
-    fs.writeFileSync(path.join(cwd, `dist/${cssBundleName}.min.css`), content)
+  copyStyles('lib/styles')
+  copyStyles('es/styles')
 
-    console.log(colors.green(`compile style success.\n`))
-  } catch (err) {
-    console.error(
-      `${colors.bgRed(colors.white('ERROR')) + ' compile style failed!\n'}`
-    )
-    throw err
-  }
+  const cssLibs = fs.readdirSync(path.join(cwd, 'components/styles/lib'))
+
+  console.log(colors.green('compile style libs...'))
+
+  await Promise.all(
+    cssLibs.map(async (cssLib) => {
+      const cssBundleName = cssLib.replace('less', 'css')
+
+      const code = await compileLess(
+        path.resolve(`components/styles/lib/${cssLib}`)
+      )
+
+      const css = await compileCss(code)
+
+      fs.writeFileSync(path.join(cwd, `lib/styles/lib/${cssBundleName}`), css)
+      fs.writeFileSync(path.join(cwd, `es/styles/lib/${cssBundleName}`), css)
+    })
+  )
+
+  console.log(colors.gray(`${cssLibs.length} style libs transformed.`))
+
+  genStyles({ outDir: 'es', target: 'es' })
+  genStyles({ outDir: 'lib', target: 'cjs' })
 }
 
 compile()
