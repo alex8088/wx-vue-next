@@ -10,6 +10,7 @@
     "format": "prettier --write .",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
     "typecheck": "vue-tsc --noEmit",
+    "build": "pnpm run -C packages/wx-vue build",
     "build:component": "pnpm run -C packages/wx-vue build:component",
     "build:style": "pnpm run -C packages/wx-vue build:style"
   },

@@ -2,6 +2,10 @@
   "name": "wx-vue",
   "version": "3.0.0",
   "description": "A Vue.js 3 Mobile UI components library based on the WeUI Design",
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "types": "es/index.d.ts",
+  "unpkg": "dist/wx-vue.min.js",
   "files": [
     "dist",
     "es",
@@ -29,6 +33,7 @@
     "ui framework"
   ],
   "scripts": {
+    "build": "npm run build:component && npm run build:style",
     "build:component": "esno scripts/compile-component.ts",
     "build:style": "esno scripts/compile-style.ts"
   },
