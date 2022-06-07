@@ -26,7 +26,15 @@ npm i wx-vue
 ### Quick Start
 
 ```
+import { createApp } from 'vue';
+import App from './App.vue';
+import Wx from 'wx-vue';
+import 'wx-vue/dist/wx-vue.css';
 
+const app = createApp(App);
+
+app.use(Wx);
+app.mount('#app');
 ```
 
 Read the [documentation](https://alex8088.github.io/wx-vue-next/docs/) to learn more.
