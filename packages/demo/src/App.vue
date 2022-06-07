@@ -1,7 +1,16 @@
-<script setup lang="ts"></script>
-
 <template>
-  <div></div>
+  <RouterView />
 </template>
 
-<style></style>
+<style>
+html,
+body {
+  height: 100%;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+</style>

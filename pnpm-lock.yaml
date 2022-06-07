@@ -19,6 +19,7 @@ importers:
       typescript: ~4.6.3
       vite: ^2.9.9
       vue: ^3.2.36
+      vue-router: ^4.0.15
       vue-tsc: ^0.35.0
     devDependencies:
       '@alexwei/commit-lint': 1.0.0
@@ -36,7 +37,14 @@ importers:
       typescript: 4.6.4
       vite: 2.9.9_less@4.1.2
       vue: 3.2.36
+      vue-router: 4.0.15_vue@3.2.36
       vue-tsc: 0.35.0_typescript@4.6.4
+
+  packages/demo:
+    specifiers:
+      wx-vue: workspace:*
+    dependencies:
+      wx-vue: link:../wx-vue
 
   packages/wx-vue:
     specifiers:
@@ -405,6 +413,10 @@ packages:
     dependencies:
       '@vue/compiler-dom': 3.2.36
       '@vue/shared': 3.2.36
+    dev: true
+
+  /@vue/devtools-api/6.1.4:
+    resolution: {integrity: sha512-IiA0SvDrJEgXvVxjNkHPFfDx6SXw0b/TUkqMcDZWNg9fnCAHbTpoo59YfJ9QLFkwa3raau5vSlRVzMSLDnfdtQ==}
     dev: true
 
   /@vue/eslint-config-prettier/7.0.0_yzlwycfcjzj3trzruaflx2c53m:
@@ -2442,6 +2454,15 @@ packages:
       semver: 7.3.7
     transitivePeerDependencies:
       - supports-color
+    dev: true
+
+  /vue-router/4.0.15_vue@3.2.36:
+    resolution: {integrity: sha512-xa+pIN9ZqORdIW1MkN2+d9Ui2pCM1b/UMgwYUCZOiFYHAvz/slKKBDha8DLrh5aCG/RibtrpyhKjKOZ85tYyWg==}
+    peerDependencies:
+      vue: ^3.2.0
+    dependencies:
+      '@vue/devtools-api': 6.1.4
+      vue: 3.2.36
     dev: true
 
   /vue-tsc/0.35.0_typescript@4.6.4:
