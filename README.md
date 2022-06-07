@@ -38,7 +38,7 @@ npm i wx-vue
 
 ### Quick Start
 
-```
+```js
 import { createApp } from 'vue';
 import App from './App.vue';
 import Wx from 'wx-vue';
