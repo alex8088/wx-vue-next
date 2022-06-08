@@ -2,5 +2,8 @@
   "button": [
     "loading",
     "button"
+  ],
+  "divider": [
+    "loadmore"
   ]
 }
