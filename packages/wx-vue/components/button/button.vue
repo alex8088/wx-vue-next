@@ -1,5 +1,11 @@
 <template>
-  <button :class="cls" :disabled="disabled || loading" @click="handleClick">
+  <button
+    role="button"
+    :class="cls"
+    :disabled="disabled || loading"
+    :aria-disabled="disabled || loading"
+    @click="handleClick"
+  >
     <span v-if="loading" class="weui-primary-loading"
       ><i class="weui-primary-loading__dot"></i
     ></span>
