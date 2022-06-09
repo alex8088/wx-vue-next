@@ -3,6 +3,9 @@
     "loading",
     "button"
   ],
+  "collapse": [
+    "collapse"
+  ],
   "divider": [
     "loadmore"
   ]
