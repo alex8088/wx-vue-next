@@ -2,6 +2,7 @@ import type { App } from 'vue'
 import components from './components'
 export * from './button'
 export * from './collapse'
+export * from './divider'
 
 const install = (app: App, options?: Record<string, unknown>): void => {
   for (const key of Object.keys(components)) {
