@@ -3,7 +3,7 @@
     :class="[
       'weui-cell',
       {
-        'weui-cell_access': !!$attrs.onClick,
+        'weui-cell_access': access,
         'weui-cell_indent': icon && !$slots.icon
       }
     ]"
