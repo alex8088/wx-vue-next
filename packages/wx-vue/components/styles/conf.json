@@ -8,5 +8,8 @@
   ],
   "divider": [
     "loadmore"
+  ],
+  "list": [
+    "cell"
   ]
 }
