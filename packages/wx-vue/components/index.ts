@@ -13,3 +13,17 @@ const install = (app: App, options?: Record<string, unknown>): void => {
 
 export { install }
 export default { install }
+
+declare module '@vue/runtime-core' {
+  export interface GlobalComponents {
+    WxButton: typeof import('./button')['WxButton']
+    WxCollapse: typeof import('./collapse')['WxCollapse']
+    WxCollapseItem: typeof import('./collapse')['WxCollapseItem']
+    WxDivider: typeof import('./divider')['WxDivider']
+    WxList: typeof import('./list')['WxList']
+    WxListItem: typeof import('./list')['WxListItem']
+  }
+
+  // interface ComponentCustomProperties {
+  // }
+}
