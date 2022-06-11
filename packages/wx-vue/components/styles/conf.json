@@ -9,6 +9,9 @@
   "divider": [
     "loadmore"
   ],
+  "flex": [
+    "flex"
+  ],
   "list": [
     "cell"
   ]

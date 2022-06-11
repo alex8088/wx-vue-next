@@ -3,6 +3,7 @@ import components from './components'
 export * from './button'
 export * from './collapse'
 export * from './divider'
+export * from './flex'
 export * from './list'
 
 const install = (app: App, options?: Record<string, unknown>): void => {
@@ -20,6 +21,8 @@ declare module '@vue/runtime-core' {
     WxCollapse: typeof import('./collapse')['WxCollapse']
     WxCollapseItem: typeof import('./collapse')['WxCollapseItem']
     WxDivider: typeof import('./divider')['WxDivider']
+    WxFlex: typeof import('./flex')['WxFlex']
+    WxFlexItem: typeof import('./flex')['WxFlexItem']
     WxList: typeof import('./list')['WxList']
     WxListItem: typeof import('./list')['WxListItem']
   }
