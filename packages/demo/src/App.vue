@@ -1,5 +1,9 @@
+<script setup lang="ts">
+import NavigationView from './components/NavigationView.vue'
+</script>
+
 <template>
-  <RouterView />
+  <NavigationView :keep-alive="/Home/" />
 </template>
 
 <style>
