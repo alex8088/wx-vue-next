@@ -24,10 +24,10 @@ export default defineComponent({
     const activeNames = ref(castArray(props.modelValue))
 
     const handleItemClick = (name: CollapseActiveName): void => {
+      const index = activeNames.value.indexOf(name)
       if (props.accordion) {
-        activeNames.value = [name]
+        activeNames.value = [index > -1 ? '' : name]
       } else {
-        const index = activeNames.value.indexOf(name)
         if (index > -1) {
           activeNames.value.splice(index, 1)
         } else {
