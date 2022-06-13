@@ -14,5 +14,11 @@
   ],
   "list": [
     "cell"
+  ],
+  "toast": [
+    "mask",
+    "transition",
+    "loading",
+    "toast"
   ]
 }

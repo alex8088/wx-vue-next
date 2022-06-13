@@ -4,6 +4,7 @@ import { WxCollapse, WxCollapseItem } from './collapse'
 import { WxDivider } from './divider'
 import { WxFlex, WxFlexItem } from './flex'
 import { WxList, WxListItem } from './list'
+import { WxToast } from './toast'
 
 const components: Record<string, Plugin> = {
   WxButton,
@@ -13,7 +14,8 @@ const components: Record<string, Plugin> = {
   WxFlex,
   WxFlexItem,
   WxList,
-  WxListItem
+  WxListItem,
+  WxToast
 }
 
 export default components

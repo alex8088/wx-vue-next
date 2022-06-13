@@ -5,6 +5,7 @@ export * from './collapse'
 export * from './divider'
 export * from './flex'
 export * from './list'
+export * from './toast'
 
 const install = (app: App, options?: Record<string, unknown>): void => {
   for (const key of Object.keys(components)) {
@@ -27,6 +28,7 @@ declare module '@vue/runtime-core' {
     WxListItem: typeof import('./list')['WxListItem']
   }
 
-  // interface ComponentCustomProperties {
-  // }
+  interface ComponentCustomProperties {
+    $toast: typeof import('./toast')['WxToast']
+  }
 }
