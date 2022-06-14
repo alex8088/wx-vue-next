@@ -16,7 +16,7 @@ const componentGroups = [
   {
     name: '布局',
     icon: IconLayout,
-    components: ['Grid']
+    components: ['Grid', 'List']
   },
   {
     name: '基础',
