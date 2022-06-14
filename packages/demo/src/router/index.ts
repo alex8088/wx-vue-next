@@ -2,6 +2,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/Home.vue'
 import Button from '../views/Button.vue'
+import Divider from '../views/Divider.vue'
 import Grid from '../views/Grid.vue'
 import List from '../views/List.vue'
 
@@ -17,6 +18,11 @@ const router = createRouter({
       path: '/button',
       name: 'button',
       component: Button
+    },
+    {
+      path: '/divider',
+      name: 'divider',
+      component: Divider
     },
     {
       path: '/grid',
