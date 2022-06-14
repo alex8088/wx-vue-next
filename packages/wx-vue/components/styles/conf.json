@@ -12,6 +12,9 @@
   "flex": [
     "flex"
   ],
+  "grid": [
+    "grid"
+  ],
   "list": [
     "cell"
   ],

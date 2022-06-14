@@ -4,6 +4,7 @@ export * from './button'
 export * from './collapse'
 export * from './divider'
 export * from './flex'
+export * from './grid'
 export * from './list'
 export * from './toast'
 
@@ -24,6 +25,8 @@ declare module '@vue/runtime-core' {
     WxDivider: typeof import('./divider')['WxDivider']
     WxFlex: typeof import('./flex')['WxFlex']
     WxFlexItem: typeof import('./flex')['WxFlexItem']
+    WxGrid: typeof import('./grid')['WxGrid']
+    WxGridItem: typeof import('./grid')['WxGridItem']
     WxList: typeof import('./list')['WxList']
     WxListItem: typeof import('./list')['WxListItem']
   }
