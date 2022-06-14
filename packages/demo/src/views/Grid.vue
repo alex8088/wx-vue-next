@@ -4,7 +4,7 @@ import IconPicture from '../components/icons/IconPicture.vue'
 </script>
 
 <template>
-  <Page title="Grid" desc="九宫格" class="grid">
+  <Page title="Grid" desc="九宫格" spacing class="grid">
     <wx-grid>
       <wx-grid-item v-for="i in 6" :key="i" :label="`Grid ${i}`">
         <template #icon><IconPicture /></template>
@@ -23,7 +23,6 @@ import IconPicture from '../components/icons/IconPicture.vue'
 .grid {
   .weui-grids {
     background-color: var(--weui-BG-2);
-    margin: 0 16px;
   }
 }
 </style>
