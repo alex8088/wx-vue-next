@@ -2,8 +2,8 @@
   <button
     role="button"
     :class="cls"
-    :disabled="disabled || loading"
-    :aria-disabled="disabled || loading"
+    :disabled="disabled"
+    :aria-disabled="disabled"
     @click="handleClick"
   >
     <span v-if="loading" class="weui-primary-loading"
