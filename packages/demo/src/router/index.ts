@@ -3,6 +3,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/Home.vue'
 import Button from '../views/Button.vue'
 import Divider from '../views/Divider.vue'
+import Flex from '../views/Flex.vue'
 import Grid from '../views/Grid.vue'
 import List from '../views/List.vue'
 
@@ -23,6 +24,11 @@ const router = createRouter({
       path: '/divider',
       name: 'divider',
       component: Divider
+    },
+    {
+      path: '/flex',
+      name: 'flex',
+      component: Flex
     },
     {
       path: '/grid',

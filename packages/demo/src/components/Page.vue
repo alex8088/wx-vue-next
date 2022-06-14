@@ -6,6 +6,7 @@ interface Props {
   desc?: string
   gray?: boolean
   foot?: boolean
+  spacing?: boolean
 }
 
 const props = withDefaults(defineProps<Props>(), {
@@ -22,7 +23,7 @@ const props = withDefaults(defineProps<Props>(), {
         <p v-if="desc" class="page__desc">{{ desc }}</p>
       </slot>
     </div>
-    <div class="page__bd">
+    <div :class="['page__bd', { 'page__bd-spacing': props.spacing }]">
       <slot />
     </div>
     <div v-if="foot" class="page__ft">
@@ -56,6 +57,10 @@ const props = withDefaults(defineProps<Props>(), {
 
   &__bd {
     flex: 1;
+
+    &-spacing {
+      padding: 0 16px;
+    }
   }
 
   &__ft {
