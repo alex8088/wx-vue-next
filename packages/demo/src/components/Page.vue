@@ -76,5 +76,9 @@ const props = withDefaults(defineProps<Props>(), {
 
 .page_gray {
   background-color: var(--weui-BG-0);
+
+  .weui-loadmore_line .weui-loadmore__tips {
+    background-color: var(--weui-BG-0);
+  }
 }
 </style>

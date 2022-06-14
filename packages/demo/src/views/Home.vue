@@ -21,7 +21,7 @@ const componentGroups = [
   {
     name: '基础',
     icon: IconBase,
-    components: []
+    components: ['Button']
   },
   {
     name: '表单',
@@ -86,6 +86,7 @@ const handleClick = (to: string): void => {
               v-for="c in g.components"
               :key="c"
               :title="c"
+              access
               @click="handleClick(c)"
             />
           </WxList>
@@ -117,6 +118,11 @@ const handleClick = (to: string): void => {
 
 .hero__components {
   padding: 0 16px;
+
+  .weui-collapse__item {
+    border-radius: 4px;
+    overflow: hidden;
+  }
 
   .weui-collapse__hd {
     padding: 20px;
