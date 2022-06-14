@@ -9,11 +9,9 @@ export type ListProps = ExtractPropTypes<typeof listProps>
 export const listItemProps = {
   icon: String,
   title: String,
+  subtitle: String,
   desc: String,
-  access: {
-    type: Boolean,
-    default: true
-  }
+  access: Boolean
 }
 
 export type ListItemProps = ExtractPropTypes<typeof listItemProps>

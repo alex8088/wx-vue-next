@@ -4,7 +4,7 @@
       'weui-cell',
       {
         'weui-cell_access': access,
-        'weui-cell_indent': icon && !$slots.icon
+        'weui-cell_indent': icon || $slots.icon
       }
     ]"
     @click="handleClick"
@@ -15,7 +15,12 @@
       </slot>
     </div>
     <div class="weui-cell__bd">
-      <slot>{{ title }}</slot>
+      <slot>
+        <p>{{ title }}</p>
+      </slot>
+      <slot name="subtitle">
+        <div v-if="subtitle" class="weui-cell__desc">{{ subtitle }}</div>
+      </slot>
     </div>
     <div class="weui-cell__ft">
       <slot name="desc">{{ desc }}</slot>
