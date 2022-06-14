@@ -6,6 +6,7 @@ import Divider from '../views/Divider.vue'
 import Flex from '../views/Flex.vue'
 import Grid from '../views/Grid.vue'
 import List from '../views/List.vue'
+import Toast from '../views/Toast.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -39,6 +40,11 @@ const router = createRouter({
       path: '/list',
       name: 'list',
       component: List
+    },
+    {
+      path: '/toast',
+      name: 'toast',
+      component: Toast
     }
   ]
 })
