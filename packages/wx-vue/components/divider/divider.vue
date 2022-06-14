@@ -14,7 +14,7 @@ export default defineComponent({
       'weui-loadmore',
       'weui-loadmore_line',
       {
-        'weui-loadmore_dot': !!slots.default
+        'weui-loadmore_dot': !slots.default
       }
     ])
 
