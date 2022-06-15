@@ -7,6 +7,7 @@ export * from './divider'
 export * from './flex'
 export * from './grid'
 export * from './list'
+export * from './message-box'
 export * from './toast'
 
 const install = (app: App, options?: Record<string, unknown>): void => {
@@ -34,6 +35,7 @@ declare module '@vue/runtime-core' {
   }
 
   interface ComponentCustomProperties {
+    $messageBox: typeof import('./message-box')['WxMessageBox']
     $toast: typeof import('./toast')['WxToast']
   }
 }

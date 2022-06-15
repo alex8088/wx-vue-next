@@ -6,6 +6,7 @@ import { WxDivider } from './divider'
 import { WxFlex, WxFlexItem } from './flex'
 import { WxGrid, WxGridItem } from './grid'
 import { WxList, WxListItem } from './list'
+import { WxMessageBox } from './message-box'
 import { WxToast } from './toast'
 
 const components: Record<string, Plugin> = {
@@ -20,6 +21,7 @@ const components: Record<string, Plugin> = {
   WxGridItem,
   WxList,
   WxListItem,
+  WxMessageBox,
   WxToast
 }
 

@@ -23,6 +23,11 @@
   "list": [
     "cell"
   ],
+  "message-box": [
+    "mask",
+    "transition",
+    "dialog"
+  ],
   "toast": [
     "mask",
     "transition",
