@@ -31,7 +31,7 @@ const componentGroups = [
   {
     name: '交互',
     icon: IconNotice,
-    components: ['Toast']
+    components: ['Message Box', 'Toast']
   },
   {
     name: '导航',
@@ -59,7 +59,7 @@ onActivated(() => {
 })
 
 const handleClick = (to: string): void => {
-  router.push({ name: to.toLowerCase() })
+  router.push({ name: to.toLowerCase().replace(/\s+/g, '') })
 }
 </script>
 

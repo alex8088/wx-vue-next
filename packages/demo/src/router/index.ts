@@ -6,6 +6,7 @@ import Divider from '../views/Divider.vue'
 import Flex from '../views/Flex.vue'
 import Grid from '../views/Grid.vue'
 import List from '../views/List.vue'
+import MessageBox from '../views/MessageBox.vue'
 import Toast from '../views/Toast.vue'
 
 const router = createRouter({
@@ -40,6 +41,11 @@ const router = createRouter({
       path: '/list',
       name: 'list',
       component: List
+    },
+    {
+      path: '/messagebox',
+      name: 'messagebox',
+      component: MessageBox
     },
     {
       path: '/toast',
