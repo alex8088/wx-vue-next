@@ -6,6 +6,11 @@
   "collapse": [
     "collapse"
   ],
+  "dialog": [
+    "mask",
+    "transition",
+    "dialog"
+  ],
   "divider": [
     "loadmore"
   ],

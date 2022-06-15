@@ -1,6 +1,7 @@
 import type { Plugin } from 'vue'
 import { WxButton } from './button'
 import { WxCollapse, WxCollapseItem } from './collapse'
+import { WxDialog } from './dialog'
 import { WxDivider } from './divider'
 import { WxFlex, WxFlexItem } from './flex'
 import { WxGrid, WxGridItem } from './grid'
@@ -11,6 +12,7 @@ const components: Record<string, Plugin> = {
   WxButton,
   WxCollapse,
   WxCollapseItem,
+  WxDialog,
   WxDivider,
   WxFlex,
   WxFlexItem,

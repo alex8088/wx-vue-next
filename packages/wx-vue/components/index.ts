@@ -2,6 +2,7 @@ import type { App } from 'vue'
 import components from './components'
 export * from './button'
 export * from './collapse'
+export * from './dialog'
 export * from './divider'
 export * from './flex'
 export * from './grid'
@@ -22,6 +23,7 @@ declare module '@vue/runtime-core' {
     WxButton: typeof import('./button')['WxButton']
     WxCollapse: typeof import('./collapse')['WxCollapse']
     WxCollapseItem: typeof import('./collapse')['WxCollapseItem']
+    WxDialog: typeof import('./dialog')['WxDialog']
     WxDivider: typeof import('./divider')['WxDivider']
     WxFlex: typeof import('./flex')['WxFlex']
     WxFlexItem: typeof import('./flex')['WxFlexItem']
