@@ -1,6 +1,7 @@
 /* eslint-disable @typescript-eslint/explicit-function-return-type */
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/Home.vue'
+import Badge from '../views/Badge.vue'
 import Button from '../views/Button.vue'
 import Divider from '../views/Divider.vue'
 import Flex from '../views/Flex.vue'
@@ -16,6 +17,11 @@ const router = createRouter({
       path: '/',
       name: 'home',
       component: Home
+    },
+    {
+      path: '/badge',
+      name: 'badge',
+      component: Badge
     },
     {
       path: '/button',
