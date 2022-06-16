@@ -1,5 +1,6 @@
 import type { App } from 'vue'
 import components from './components'
+export * from './badge'
 export * from './button'
 export * from './collapse'
 export * from './dialog'
@@ -21,6 +22,7 @@ export default { install }
 
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
+    WxBadge: typeof import('./badge')['WxBadge']
     WxButton: typeof import('./button')['WxButton']
     WxCollapse: typeof import('./collapse')['WxCollapse']
     WxCollapseItem: typeof import('./collapse')['WxCollapseItem']

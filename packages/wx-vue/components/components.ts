@@ -1,4 +1,5 @@
 import type { Plugin } from 'vue'
+import { WxBadge } from './badge'
 import { WxButton } from './button'
 import { WxCollapse, WxCollapseItem } from './collapse'
 import { WxDialog } from './dialog'
@@ -10,6 +11,7 @@ import { WxMessageBox } from './message-box'
 import { WxToast } from './toast'
 
 const components: Record<string, Plugin> = {
+  WxBadge,
   WxButton,
   WxCollapse,
   WxCollapseItem,
