@@ -31,7 +31,7 @@ const componentGroups = [
   {
     name: '交互',
     icon: IconNotice,
-    components: ['Message Box', 'Toast']
+    components: ['Message Box', 'Toast', 'TopTip']
   },
   {
     name: '导航',

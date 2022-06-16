@@ -9,6 +9,7 @@ import Grid from '../views/Grid.vue'
 import List from '../views/List.vue'
 import MessageBox from '../views/MessageBox.vue'
 import Toast from '../views/Toast.vue'
+import TopTip from '../views/TopTip.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -57,6 +58,11 @@ const router = createRouter({
       path: '/toast',
       name: 'toast',
       component: Toast
+    },
+    {
+      path: '/toptip',
+      name: 'toptip',
+      component: TopTip
     }
   ]
 })
