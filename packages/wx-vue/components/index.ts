@@ -10,6 +10,7 @@ export * from './grid'
 export * from './list'
 export * from './message-box'
 export * from './toast'
+export * from './top-tip'
 
 const install = (app: App, options?: Record<string, unknown>): void => {
   for (const key of Object.keys(components)) {
@@ -39,5 +40,6 @@ declare module '@vue/runtime-core' {
   interface ComponentCustomProperties {
     $messageBox: typeof import('./message-box')['WxMessageBox']
     $toast: typeof import('./toast')['WxToast']
+    $topTip: typeof import('./top-tip')['WxTopTip']
   }
 }

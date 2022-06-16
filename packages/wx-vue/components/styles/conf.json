@@ -36,5 +36,9 @@
     "transition",
     "loading",
     "toast"
+  ],
+  "top-tip": [
+    "transition",
+    "top-tip"
   ]
 }

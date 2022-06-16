@@ -9,6 +9,7 @@ import { WxGrid, WxGridItem } from './grid'
 import { WxList, WxListItem } from './list'
 import { WxMessageBox } from './message-box'
 import { WxToast } from './toast'
+import { WxTopTip } from './top-tip'
 
 const components: Record<string, Plugin> = {
   WxBadge,
@@ -24,7 +25,8 @@ const components: Record<string, Plugin> = {
   WxList,
   WxListItem,
   WxMessageBox,
-  WxToast
+  WxToast,
+  WxTopTip
 }
 
 export default components
