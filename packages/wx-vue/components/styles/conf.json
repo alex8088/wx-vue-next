@@ -31,6 +31,9 @@
     "transition",
     "dialog"
   ],
+  "skeleton": [
+    "skeleton"
+  ],
   "toast": [
     "mask",
     "transition",

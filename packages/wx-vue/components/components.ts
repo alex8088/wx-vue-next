@@ -8,6 +8,7 @@ import { WxFlex, WxFlexItem } from './flex'
 import { WxGrid, WxGridItem } from './grid'
 import { WxList, WxListItem } from './list'
 import { WxMessageBox } from './message-box'
+import { WxSkeleton, WxSkeletonLine, WxSkeletonShape } from './skeleton'
 import { WxToast } from './toast'
 import { WxTopTip } from './top-tip'
 
@@ -25,6 +26,9 @@ const components: Record<string, Plugin> = {
   WxList,
   WxListItem,
   WxMessageBox,
+  WxSkeleton,
+  WxSkeletonLine,
+  WxSkeletonShape,
   WxToast,
   WxTopTip
 }

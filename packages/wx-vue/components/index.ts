@@ -9,6 +9,7 @@ export * from './flex'
 export * from './grid'
 export * from './list'
 export * from './message-box'
+export * from './skeleton'
 export * from './toast'
 export * from './top-tip'
 
@@ -35,6 +36,9 @@ declare module '@vue/runtime-core' {
     WxGridItem: typeof import('./grid')['WxGridItem']
     WxList: typeof import('./list')['WxList']
     WxListItem: typeof import('./list')['WxListItem']
+    WxSkeleton: typeof import('./skeleton')['WxSkeleton']
+    WxSkeletonLine: typeof import('./skeleton')['WxSkeletonLine']
+    WxSkeletonShape: typeof import('./skeleton')['WxSkeletonShape']
   }
 
   interface ComponentCustomProperties {

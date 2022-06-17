@@ -1,0 +1,90 @@
+@import "../../base/theme/fn";
+
+.setColor(--weui-SKELETON-FILL-COLOR, #f0f2f5, #303030);
+.setColor(--weui-SKELETON-ANIMATE-COLOR, #e6e8eb, #424242);
+
+@weuiSkeletonFillColor: var(--weui-SKELETON-FILL-COLOR);
+@weuiSkeletonLineHeight: 18px;
+@weuiSkeletonBorderRadius: 4px;
+@weuiSkeletonShapeSizeSmall: 32px;
+@weuiSkeletonShapeSizeMedium: 48px;
+@weuiSkeletonShapeSizeLarge: 60px;
+@weuiSkeletonSpacing: 12px;
+
+.weui-skeleton {
+  box-sizing: border-box;
+
+  & + & {
+    margin-top: @weuiSkeletonSpacing;
+  }
+
+  &_animation {
+    .weui-skeleton-line,
+    .weui-skeleton-shape {
+      background: linear-gradient(
+        90deg,
+        var(--weui-SKELETON-FILL-COLOR) 25%,
+        var(--weui-SKELETON-ANIMATE-COLOR) 37%,
+        var(--weui-SKELETON-FILL-COLOR) 63%
+      );
+      background-size: 400% 100%;
+      animation: skeletonLoading 1.4s ease infinite;
+    }
+  }
+
+  &-line {
+    background: @weuiSkeletonFillColor;
+    display: flex;
+    height: @weuiSkeletonLineHeight;
+    border-radius: @weuiSkeletonBorderRadius;
+  }
+
+  &-line + &-line,
+  &-line + &-shape,
+  &-shape + &-line {
+    margin-top: @weuiSkeletonSpacing;
+  }
+
+  &-shape + &-shape {
+    margin-left: @weuiSkeletonSpacing;
+  }
+
+  &-shape {
+    display: inline-block;
+    background: @weuiSkeletonFillColor;
+
+    .setShapeSize(@size) {
+      height: @size;
+      width: @size;
+    }
+
+    &_circle {
+      border-radius: 50%;
+    }
+
+    &_square {
+      border-radius: @weuiSkeletonBorderRadius;
+    }
+
+    &_small {
+      .setShapeSize(@weuiSkeletonShapeSizeSmall);
+    }
+
+    &_medium {
+      .setShapeSize(@weuiSkeletonShapeSizeMedium);
+    }
+
+    &_large {
+      .setShapeSize(@weuiSkeletonShapeSizeLarge);
+    }
+  }
+}
+
+@keyframes skeletonLoading {
+  0% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
