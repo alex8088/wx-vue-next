@@ -8,6 +8,7 @@ import Flex from '../views/Flex.vue'
 import Grid from '../views/Grid.vue'
 import List from '../views/List.vue'
 import MessageBox from '../views/MessageBox.vue'
+import Skeleton from '../views/Skeleton.vue'
 import Toast from '../views/Toast.vue'
 import TopTip from '../views/TopTip.vue'
 
@@ -53,6 +54,11 @@ const router = createRouter({
       path: '/messagebox',
       name: 'messagebox',
       component: MessageBox
+    },
+    {
+      path: '/skeleton',
+      name: 'skeleton',
+      component: Skeleton
     },
     {
       path: '/toast',
