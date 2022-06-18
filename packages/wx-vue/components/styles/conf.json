@@ -34,6 +34,9 @@
   "skeleton": [
     "skeleton"
   ],
+  "sticky": [
+    "sticky"
+  ],
   "toast": [
     "mask",
     "transition",

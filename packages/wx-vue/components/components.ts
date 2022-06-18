@@ -9,6 +9,7 @@ import { WxGrid, WxGridItem } from './grid'
 import { WxList, WxListItem } from './list'
 import { WxMessageBox } from './message-box'
 import { WxSkeleton, WxSkeletonLine, WxSkeletonShape } from './skeleton'
+import { WxSticky } from './sticky'
 import { WxToast } from './toast'
 import { WxTopTip } from './top-tip'
 
@@ -29,6 +30,7 @@ const components: Record<string, Plugin> = {
   WxSkeleton,
   WxSkeletonLine,
   WxSkeletonShape,
+  WxSticky,
   WxToast,
   WxTopTip
 }

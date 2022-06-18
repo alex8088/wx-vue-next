@@ -10,6 +10,7 @@ export * from './grid'
 export * from './list'
 export * from './message-box'
 export * from './skeleton'
+export * from './sticky'
 export * from './toast'
 export * from './top-tip'
 
@@ -39,6 +40,7 @@ declare module '@vue/runtime-core' {
     WxSkeleton: typeof import('./skeleton')['WxSkeleton']
     WxSkeletonLine: typeof import('./skeleton')['WxSkeletonLine']
     WxSkeletonShape: typeof import('./skeleton')['WxSkeletonShape']
+    WxSticky: typeof import('./sticky')['WxSticky']
   }
 
   interface ComponentCustomProperties {
