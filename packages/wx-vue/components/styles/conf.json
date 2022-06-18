@@ -28,6 +28,11 @@
   "grid": [
     "grid"
   ],
+  "half-screen-dialog": [
+    "mask",
+    "transition",
+    "half-screen-dialog"
+  ],
   "list": [
     "cell"
   ],

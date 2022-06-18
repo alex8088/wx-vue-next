@@ -7,6 +7,7 @@ import { WxDialog } from './dialog'
 import { WxDivider } from './divider'
 import { WxFlex, WxFlexItem } from './flex'
 import { WxGrid, WxGridItem } from './grid'
+import { WxHalfScreenDialog } from './half-screen-dialog'
 import { WxList, WxListItem } from './list'
 import { WxMessageBox } from './message-box'
 import { WxSkeleton, WxSkeletonLine, WxSkeletonShape } from './skeleton'
@@ -27,6 +28,7 @@ const components: Record<string, Plugin> = {
   WxFlexItem,
   WxGrid,
   WxGridItem,
+  WxHalfScreenDialog,
   WxList,
   WxListItem,
   WxMessageBox,

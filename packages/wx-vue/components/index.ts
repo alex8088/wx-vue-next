@@ -8,6 +8,7 @@ export * from './dialog'
 export * from './divider'
 export * from './flex'
 export * from './grid'
+export * from './half-screen-dialog'
 export * from './list'
 export * from './message-box'
 export * from './skeleton'
@@ -38,6 +39,7 @@ declare module '@vue/runtime-core' {
     WxFlexItem: typeof import('./flex')['WxFlexItem']
     WxGrid: typeof import('./grid')['WxGrid']
     WxGridItem: typeof import('./grid')['WxGridItem']
+    WxHalfScreenDialog: typeof import('./half-screen-dialog')['WxHalfScreenDialog']
     WxList: typeof import('./list')['WxList']
     WxListItem: typeof import('./list')['WxListItem']
     WxSkeleton: typeof import('./skeleton')['WxSkeleton']
