@@ -1,4 +1,5 @@
 import type { Plugin } from 'vue'
+import { WxActionSheet, WxActionSheetItem } from './action-sheet'
 import { WxBadge } from './badge'
 import { WxButton } from './button'
 import { WxCollapse, WxCollapseItem } from './collapse'
@@ -14,6 +15,8 @@ import { WxToast } from './toast'
 import { WxTopTip } from './top-tip'
 
 const components: Record<string, Plugin> = {
+  WxActionSheet,
+  WxActionSheetItem,
   WxBadge,
   WxButton,
   WxCollapse,

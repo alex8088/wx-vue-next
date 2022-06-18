@@ -1,4 +1,9 @@
 {
+  "action-sheet": [
+    "mask",
+    "animate",
+    "action-sheet"
+  ],
   "badge": [
     "badge"
   ],
