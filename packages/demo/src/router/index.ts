@@ -9,6 +9,7 @@ import Grid from '../views/Grid.vue'
 import List from '../views/List.vue'
 import MessageBox from '../views/MessageBox.vue'
 import Skeleton from '../views/Skeleton.vue'
+import Sticky from '../views/Sticky.vue'
 import Toast from '../views/Toast.vue'
 import TopTip from '../views/TopTip.vue'
 
@@ -59,6 +60,11 @@ const router = createRouter({
       path: '/skeleton',
       name: 'skeleton',
       component: Skeleton
+    },
+    {
+      path: '/sticky',
+      name: 'sticky',
+      component: Sticky
     },
     {
       path: '/toast',
