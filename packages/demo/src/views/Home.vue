@@ -31,7 +31,13 @@ const componentGroups = [
   {
     name: '交互',
     icon: IconNotice,
-    components: ['Action Sheet', 'Message Box', 'Toast', 'TopTip']
+    components: [
+      'Action Sheet',
+      'Half Screen Dialog',
+      'Message Box',
+      'Toast',
+      'TopTip'
+    ]
   },
   {
     name: '导航',

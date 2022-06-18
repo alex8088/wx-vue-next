@@ -7,6 +7,7 @@ import Button from '../views/Button.vue'
 import Divider from '../views/Divider.vue'
 import Flex from '../views/Flex.vue'
 import Grid from '../views/Grid.vue'
+import HalfScreenDialog from '../views/HalfScreenDialog.vue'
 import List from '../views/List.vue'
 import MessageBox from '../views/MessageBox.vue'
 import Skeleton from '../views/Skeleton.vue'
@@ -51,6 +52,11 @@ const router = createRouter({
       path: '/grid',
       name: 'grid',
       component: Grid
+    },
+    {
+      path: '/halfscreendialog',
+      name: 'halfscreendialog',
+      component: HalfScreenDialog
     },
     {
       path: '/list',
