@@ -10,6 +10,7 @@ import { WxGrid, WxGridItem } from './grid'
 import { WxHalfScreenDialog } from './half-screen-dialog'
 import { WxList, WxListItem } from './list'
 import { WxMessageBox } from './message-box'
+import { WxProgress } from './progress'
 import { WxSkeleton, WxSkeletonLine, WxSkeletonShape } from './skeleton'
 import { WxSticky } from './sticky'
 import { WxToast } from './toast'
@@ -32,6 +33,7 @@ const components: Record<string, Plugin> = {
   WxList,
   WxListItem,
   WxMessageBox,
+  WxProgress,
   WxSkeleton,
   WxSkeletonLine,
   WxSkeletonShape,

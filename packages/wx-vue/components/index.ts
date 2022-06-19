@@ -11,6 +11,7 @@ export * from './grid'
 export * from './half-screen-dialog'
 export * from './list'
 export * from './message-box'
+export * from './progress'
 export * from './skeleton'
 export * from './sticky'
 export * from './toast'
@@ -42,6 +43,7 @@ declare module '@vue/runtime-core' {
     WxHalfScreenDialog: typeof import('./half-screen-dialog')['WxHalfScreenDialog']
     WxList: typeof import('./list')['WxList']
     WxListItem: typeof import('./list')['WxListItem']
+    WxProgress: typeof import('./progress')['WxProgress']
     WxSkeleton: typeof import('./skeleton')['WxSkeleton']
     WxSkeletonLine: typeof import('./skeleton')['WxSkeletonLine']
     WxSkeletonShape: typeof import('./skeleton')['WxSkeletonShape']

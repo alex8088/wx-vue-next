@@ -41,6 +41,10 @@
     "transition",
     "dialog"
   ],
+  "progress": [
+    "icon",
+    "progress"
+  ],
   "skeleton": [
     "skeleton"
   ],
