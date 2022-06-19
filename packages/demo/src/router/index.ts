@@ -11,6 +11,7 @@ import HalfScreenDialog from '../views/HalfScreenDialog.vue'
 import List from '../views/List.vue'
 import MessageBox from '../views/MessageBox.vue'
 import Progress from '../views/Progress.vue'
+import Rate from '../views/Rate.vue'
 import Skeleton from '../views/Skeleton.vue'
 import Sticky from '../views/Sticky.vue'
 import Toast from '../views/Toast.vue'
@@ -73,6 +74,11 @@ const router = createRouter({
       path: '/progress',
       name: 'progress',
       component: Progress
+    },
+    {
+      path: '/rate',
+      name: 'rate',
+      component: Rate
     },
     {
       path: '/skeleton',
