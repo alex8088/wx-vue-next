@@ -45,6 +45,9 @@
     "icon",
     "progress"
   ],
+  "rate": [
+    "rate"
+  ],
   "skeleton": [
     "skeleton"
   ],
