@@ -8,6 +8,7 @@ import Divider from '../views/Divider.vue'
 import Flex from '../views/Flex.vue'
 import Grid from '../views/Grid.vue'
 import HalfScreenDialog from '../views/HalfScreenDialog.vue'
+import Link from '../views/Link.vue'
 import List from '../views/List.vue'
 import MessageBox from '../views/MessageBox.vue'
 import Progress from '../views/Progress.vue'
@@ -59,6 +60,11 @@ const router = createRouter({
       path: '/halfscreendialog',
       name: 'halfscreendialog',
       component: HalfScreenDialog
+    },
+    {
+      path: '/link',
+      name: 'link',
+      component: Link
     },
     {
       path: '/list',
