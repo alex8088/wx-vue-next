@@ -30,7 +30,7 @@ const showHSD4 = ref(false)
     >
       <div class="hs-dialog-content">自定义内容</div>
     </wx-half-screen-dialog>
-    <wx-half-screen-dialog v-model:visible="showHSD3" hidden-close-icon>
+    <wx-half-screen-dialog v-model:visible="showHSD3" hide-close-icon>
       <template #header>
         <wx-flex style="align-items: center; font-size: 14px">
           <div class="hs-dialog-avatar"></div>
