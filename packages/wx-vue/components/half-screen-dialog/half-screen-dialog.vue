@@ -13,7 +13,7 @@
       >
         <div class="weui-half-screen-dialog__hd">
           <div
-            v-if="!hiddenCloseIcon && closeIconPosition === 'left'"
+            v-if="!hideCloseIcon && closeIconPosition === 'left'"
             class="weui-half-screen-dialog__hd__side"
           >
             <button class="weui-btn_icon" @click="handleClick">
@@ -31,7 +31,7 @@
             </slot>
           </div>
           <div
-            v-if="!hiddenCloseIcon && closeIconPosition === 'right'"
+            v-if="!hideCloseIcon && closeIconPosition === 'right'"
             class="weui-half-screen-dialog__hd__side"
           >
             <button class="weui-btn_icon" @click="handleClick">

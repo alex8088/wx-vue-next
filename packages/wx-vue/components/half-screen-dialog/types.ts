@@ -4,7 +4,7 @@ export const halfScreenDialogProps = {
   visible: Boolean,
   title: String,
   subtitle: String,
-  hiddenCloseIcon: Boolean,
+  hideCloseIcon: Boolean,
   closeIconPosition: {
     type: String as PropType<'left' | 'right'>,
     default: 'left'
