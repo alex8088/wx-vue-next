@@ -8,6 +8,7 @@ import { WxDivider } from './divider'
 import { WxFlex, WxFlexItem } from './flex'
 import { WxGrid, WxGridItem } from './grid'
 import { WxHalfScreenDialog } from './half-screen-dialog'
+import { WxLink } from './link'
 import { WxList, WxListItem } from './list'
 import { WxMessageBox } from './message-box'
 import { WxProgress } from './progress'
@@ -31,6 +32,7 @@ const components: Record<string, Plugin> = {
   WxGrid,
   WxGridItem,
   WxHalfScreenDialog,
+  WxLink,
   WxList,
   WxListItem,
   WxMessageBox,
