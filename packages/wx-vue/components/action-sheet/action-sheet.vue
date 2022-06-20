@@ -17,7 +17,7 @@
       <div class="weui-actionsheet__menu">
         <slot></slot>
       </div>
-      <div v-if="!hiddenCancel" class="weui-actionsheet__action">
+      <div v-if="!hideCancel" class="weui-actionsheet__action">
         <div class="weui-actionsheet__cell" role="button" @click="handleClick">
           {{ cancelText }}
         </div>

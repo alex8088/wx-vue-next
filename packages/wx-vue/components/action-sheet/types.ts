@@ -7,7 +7,7 @@ export const actionSheetProps = {
     type: String,
     default: 'Cancel'
   },
-  hiddenCancel: Boolean
+  hideCancel: Boolean
 }
 
 export type ActionSheetProps = ExtractPropTypes<typeof actionSheetProps>
