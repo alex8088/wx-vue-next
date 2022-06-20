@@ -21,7 +21,7 @@ const showAS3 = ref(false)
     </wx-action-sheet>
     <wx-divider>无标题/隐藏取消菜单</wx-divider>
     <wx-button type="light" @click="showAS2 = true">自定义</wx-button>
-    <wx-action-sheet v-model:visible="showAS2" hidden-cancel>
+    <wx-action-sheet v-model:visible="showAS2" hide-cancel>
       <wx-action-sheet-item>示例菜单</wx-action-sheet-item>
       <wx-action-sheet-item>示例菜单</wx-action-sheet-item>
       <wx-action-sheet-item>示例菜单</wx-action-sheet-item>
