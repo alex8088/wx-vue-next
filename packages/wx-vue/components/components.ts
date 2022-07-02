@@ -6,6 +6,7 @@ import { WxCollapse, WxCollapseItem } from './collapse'
 import { WxDialog } from './dialog'
 import { WxDivider } from './divider'
 import { WxFlex, WxFlexItem } from './flex'
+import { WxForm, WxFormGroup } from './form'
 import { WxGrid, WxGridItem } from './grid'
 import { WxHalfScreenDialog } from './half-screen-dialog'
 import { WxLink } from './link'
@@ -29,6 +30,8 @@ const components: Record<string, Plugin> = {
   WxDivider,
   WxFlex,
   WxFlexItem,
+  WxForm,
+  WxFormGroup,
   WxGrid,
   WxGridItem,
   WxHalfScreenDialog,

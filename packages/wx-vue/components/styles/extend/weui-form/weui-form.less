@@ -1,0 +1,53 @@
+@import "../../base/fn";
+
+.weui-cells__group_form {
+
+  input {
+    caret-color: auto;
+  }
+
+  .weui-cell {
+
+    .weui-cell__ft {
+      font-size: 0;
+    }
+
+    .weui-cell__hd {
+
+      img,
+      svg {
+        width: 24px;
+        height: 24px;
+        display: block;
+        margin-right: 0;
+      }
+    }
+
+    .weui-label {
+      margin-right: 0;
+    }
+
+    &__tips {
+      font-size: 12px;
+      line-height: 16px;
+      margin-top: 4px;
+      color: @weuiTextColorDesc;
+    }
+
+    &__tips_warn {
+      color: @weuiColorWarn;
+    }
+
+    &_flex-wrap {
+      align-items: initial;
+    }
+
+    &_asterisk {
+      .weui-label::after {
+        margin-left: 2px;
+        color: @weuiColorWarn;
+        content: "*";
+      }
+    }
+  }
+}

@@ -7,6 +7,7 @@ export * from './collapse'
 export * from './dialog'
 export * from './divider'
 export * from './flex'
+export * from './form'
 export * from './grid'
 export * from './half-screen-dialog'
 export * from './link'
@@ -40,6 +41,8 @@ declare module '@vue/runtime-core' {
     WxDivider: typeof import('./divider')['WxDivider']
     WxFlex: typeof import('./flex')['WxFlex']
     WxFlexItem: typeof import('./flex')['WxFlexItem']
+    WxForm: typeof import('./form')['WxForm']
+    WxFormGroup: typeof import('./form')['WxFormGroup']
     WxGrid: typeof import('./grid')['WxGrid']
     WxGridItem: typeof import('./grid')['WxGridItem']
     WxHalfScreenDialog: typeof import('./half-screen-dialog')['WxHalfScreenDialog']

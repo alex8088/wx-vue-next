@@ -25,6 +25,10 @@
   "flex": [
     "flex"
   ],
+  "form": [
+    "cell",
+    "form"
+  ],
   "grid": [
     "grid"
   ],

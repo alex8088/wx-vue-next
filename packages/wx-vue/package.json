@@ -51,5 +51,8 @@
     "postcss": "^8.4.14",
     "postcss-discard-comments": "^5.1.2",
     "ts-morph": "^15.1.0"
+  },
+  "dependencies": {
+    "async-validator": "^4.2.5"
   }
 }

@@ -50,6 +50,7 @@ importers:
     specifiers:
       '@types/glob': ^7.2.0
       '@types/less': ^3.0.3
+      async-validator: ^4.2.5
       autoprefixer: ^10.4.7
       esbuild: ^0.14.42
       esno: ^0.16.3
@@ -58,6 +59,8 @@ importers:
       postcss: ^8.4.14
       postcss-discard-comments: ^5.1.2
       ts-morph: ^15.1.0
+    dependencies:
+      async-validator: 4.2.5
     devDependencies:
       '@types/glob': 7.2.0
       '@types/less': 3.0.3
@@ -570,6 +573,10 @@ packages:
     resolution: {integrity: sha512-Z7tMw1ytTXt5jqMcOP+OQteU1VuNK9Y02uuJtKQ1Sv69jXQKKg5cibLwGJow8yzZP+eAc18EmLGPal0bp36rvQ==}
     engines: {node: '>=8'}
     dev: true
+
+  /async-validator/4.2.5:
+    resolution: {integrity: sha512-7HhHjtERjqlNbZtqNqy2rckN/SpOOlmDliet+lP7k+eKZEjPk3DgyeU9lIXLdeLz0uBbbVp+9Qdow9wJWgwwfg==}
+    dev: false
 
   /autoprefixer/10.4.7_postcss@8.4.14:
     resolution: {integrity: sha512-ypHju4Y2Oav95SipEcCcI5J7CGPuvz8oat7sUtYj3ClK44bldfvtvcxK6IEK++7rqB7YchDGzweZIBG+SD0ZAA==}
