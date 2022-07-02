@@ -3,6 +3,7 @@ import components from './components'
 export * from './action-sheet'
 export * from './badge'
 export * from './button'
+export * from './checkbox'
 export * from './collapse'
 export * from './dialog'
 export * from './divider'
@@ -37,6 +38,8 @@ declare module '@vue/runtime-core' {
     WxActionSheetItem: typeof import('./action-sheet')['WxActionSheetItem']
     WxBadge: typeof import('./badge')['WxBadge']
     WxButton: typeof import('./button')['WxButton']
+    WxCheckbox: typeof import('./checkbox')['WxCheckbox']
+    WxCheckboxGroup: typeof import('./checkbox')['WxCheckboxGroup']
     WxCollapse: typeof import('./collapse')['WxCollapse']
     WxCollapseItem: typeof import('./collapse')['WxCollapseItem']
     WxDialog: typeof import('./dialog')['WxDialog']

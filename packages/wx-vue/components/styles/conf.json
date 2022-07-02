@@ -11,6 +11,11 @@
     "loading",
     "button"
   ],
+  "checkbox": [
+    "cell",
+    "form",
+    "checkbox"
+  ],
   "collapse": [
     "collapse"
   ],

@@ -2,6 +2,7 @@ import type { Plugin } from 'vue'
 import { WxActionSheet, WxActionSheetItem } from './action-sheet'
 import { WxBadge } from './badge'
 import { WxButton } from './button'
+import { WxCheckbox, WxCheckboxGroup } from './checkbox'
 import { WxCollapse, WxCollapseItem } from './collapse'
 import { WxDialog } from './dialog'
 import { WxDivider } from './divider'
@@ -26,6 +27,8 @@ const components: Record<string, Plugin> = {
   WxActionSheetItem,
   WxBadge,
   WxButton,
+  WxCheckbox,
+  WxCheckboxGroup,
   WxCollapse,
   WxCollapseItem,
   WxDialog,
