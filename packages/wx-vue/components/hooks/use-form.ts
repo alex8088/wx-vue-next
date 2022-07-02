@@ -245,9 +245,7 @@ export const useFormField = (
 
     const result = await doValidate(rules)
 
-    if (!result.valid) {
-      validateMessage.value = result.errors![0]?.message || ''
-    }
+    validateMessage.value = result.valid ? '' : result.errors![0]?.message || ''
 
     callback?.(result.valid, result.fieldsError)
     return { valid: result.valid, fieldsError: result.fieldsError }
