@@ -26,7 +26,7 @@ const componentGroups = [
   {
     name: '表单',
     icon: IconForm,
-    components: ['Input', 'Rate']
+    components: ['Input', 'Radio', 'Rate']
   },
   {
     name: '交互',
