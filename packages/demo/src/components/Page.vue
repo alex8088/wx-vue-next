@@ -17,7 +17,7 @@ const props = withDefaults(defineProps<Props>(), {
 
 <template>
   <div :class="['page', { page_gray: props.gray }]">
-    <div class="page__hd">
+    <div v-if="title || $slots.header" class="page__hd">
       <slot name="header">
         <p v-if="title" class="page__title">{{ title }}</p>
         <p v-if="desc" class="page__desc">{{ desc }}</p>
