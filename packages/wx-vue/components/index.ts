@@ -10,6 +10,7 @@ export * from './flex'
 export * from './form'
 export * from './grid'
 export * from './half-screen-dialog'
+export * from './input'
 export * from './link'
 export * from './list'
 export * from './message-box'
@@ -46,6 +47,7 @@ declare module '@vue/runtime-core' {
     WxGrid: typeof import('./grid')['WxGrid']
     WxGridItem: typeof import('./grid')['WxGridItem']
     WxHalfScreenDialog: typeof import('./half-screen-dialog')['WxHalfScreenDialog']
+    WxInput: typeof import('./input')['WxInput']
     WxLink: typeof import('./link')['WxLink']
     WxList: typeof import('./list')['WxList']
     WxListItem: typeof import('./list')['WxListItem']

@@ -37,6 +37,11 @@
     "transition",
     "half-screen-dialog"
   ],
+  "input": [
+    "cell",
+    "form",
+    "button"
+  ],
   "link": [
     "link"
   ],
