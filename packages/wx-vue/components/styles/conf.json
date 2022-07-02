@@ -57,6 +57,11 @@
     "icon",
     "progress"
   ],
+  "radio": [
+    "cell",
+    "form",
+    "radio"
+  ],
   "rate": [
     "rate"
   ],

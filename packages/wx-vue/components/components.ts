@@ -14,6 +14,7 @@ import { WxLink } from './link'
 import { WxList, WxListItem } from './list'
 import { WxMessageBox } from './message-box'
 import { WxProgress } from './progress'
+import { WxRadio, WxRadioGroup } from './radio'
 import { WxRate } from './rate'
 import { WxSkeleton, WxSkeletonLine, WxSkeletonShape } from './skeleton'
 import { WxSticky } from './sticky'
@@ -42,6 +43,8 @@ const components: Record<string, Plugin> = {
   WxListItem,
   WxMessageBox,
   WxProgress,
+  WxRadio,
+  WxRadioGroup,
   WxRate,
   WxSkeleton,
   WxSkeletonLine,
