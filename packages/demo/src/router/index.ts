@@ -18,6 +18,7 @@ import Radio from '../views/Radio.vue'
 import Rate from '../views/Rate.vue'
 import Skeleton from '../views/Skeleton.vue'
 import Sticky from '../views/Sticky.vue'
+import Textarea from '../views/Textarea.vue'
 import Toast from '../views/Toast.vue'
 import TopTip from '../views/TopTip.vue'
 
@@ -113,6 +114,11 @@ const router = createRouter({
       path: '/sticky',
       name: 'sticky',
       component: Sticky
+    },
+    {
+      path: '/textarea',
+      name: 'textarea',
+      component: Textarea
     },
     {
       path: '/toast',
