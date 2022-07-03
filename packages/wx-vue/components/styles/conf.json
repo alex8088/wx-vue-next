@@ -76,6 +76,11 @@
   "sticky": [
     "sticky"
   ],
+  "switch": [
+    "cell",
+    "form",
+    "switch"
+  ],
   "textarea": [
     "cell",
     "form"
