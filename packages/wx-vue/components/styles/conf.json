@@ -76,6 +76,10 @@
   "sticky": [
     "sticky"
   ],
+  "textarea": [
+    "cell",
+    "form"
+  ],
   "toast": [
     "mask",
     "transition",

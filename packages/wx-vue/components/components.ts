@@ -19,6 +19,7 @@ import { WxRadio, WxRadioGroup } from './radio'
 import { WxRate } from './rate'
 import { WxSkeleton, WxSkeletonLine, WxSkeletonShape } from './skeleton'
 import { WxSticky } from './sticky'
+import { WxTextarea } from './textarea'
 import { WxToast } from './toast'
 import { WxTopTip } from './top-tip'
 
@@ -53,6 +54,7 @@ const components: Record<string, Plugin> = {
   WxSkeletonLine,
   WxSkeletonShape,
   WxSticky,
+  WxTextarea,
   WxToast,
   WxTopTip
 }

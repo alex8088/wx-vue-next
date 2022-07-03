@@ -20,6 +20,7 @@ export * from './radio'
 export * from './rate'
 export * from './skeleton'
 export * from './sticky'
+export * from './textarea'
 export * from './toast'
 export * from './top-tip'
 
@@ -63,6 +64,7 @@ declare module '@vue/runtime-core' {
     WxSkeletonLine: typeof import('./skeleton')['WxSkeletonLine']
     WxSkeletonShape: typeof import('./skeleton')['WxSkeletonShape']
     WxSticky: typeof import('./sticky')['WxSticky']
+    WxTextarea: typeof import('./textarea')['WxTextarea']
   }
 
   interface ComponentCustomProperties {
