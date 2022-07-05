@@ -26,7 +26,15 @@ const componentGroups = [
   {
     name: '表单',
     icon: IconForm,
-    components: ['Checkbox', 'Input', 'Radio', 'Rate', 'Switch', 'Textarea']
+    components: [
+      'Checkbox',
+      'Input',
+      'Radio',
+      'Rate',
+      'Slider',
+      'Switch',
+      'Textarea'
+    ]
   },
   {
     name: '交互',

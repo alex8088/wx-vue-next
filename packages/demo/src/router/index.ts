@@ -17,6 +17,7 @@ import Progress from '../views/Progress.vue'
 import Radio from '../views/Radio.vue'
 import Rate from '../views/Rate.vue'
 import Skeleton from '../views/Skeleton.vue'
+import Slider from '../views/Slider.vue'
 import Sticky from '../views/Sticky.vue'
 import Switch from '../views/Switch.vue'
 import Textarea from '../views/Textarea.vue'
@@ -110,6 +111,11 @@ const router = createRouter({
       path: '/skeleton',
       name: 'skeleton',
       component: Skeleton
+    },
+    {
+      path: '/slider',
+      name: 'slider',
+      component: Slider
     },
     {
       path: '/sticky',
