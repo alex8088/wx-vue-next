@@ -20,3 +20,13 @@ export const removeClass = (el: Element, cls: string): void => {
   if (!el || !cls.trim()) return
   el.classList.remove(...classNameToArray(cls))
 }
+
+export const getStyle = (el: Element, styleProp: string): string => {
+  if (!el || !styleProp) return ''
+
+  const defaultView = (el.ownerDocument || document).defaultView
+
+  return defaultView
+    ? defaultView.getComputedStyle(el, null).getPropertyValue(styleProp)
+    : ''
+}

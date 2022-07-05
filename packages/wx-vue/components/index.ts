@@ -19,6 +19,7 @@ export * from './progress'
 export * from './radio'
 export * from './rate'
 export * from './skeleton'
+export * from './slider'
 export * from './sticky'
 export * from './switch'
 export * from './textarea'
@@ -64,6 +65,7 @@ declare module '@vue/runtime-core' {
     WxSkeleton: typeof import('./skeleton')['WxSkeleton']
     WxSkeletonLine: typeof import('./skeleton')['WxSkeletonLine']
     WxSkeletonShape: typeof import('./skeleton')['WxSkeletonShape']
+    WxSlider: typeof import('./slider')['WxSlider']
     WxSticky: typeof import('./sticky')['WxSticky']
     WxSwitch: typeof import('./switch')['WxSwitch']
     WxTextarea: typeof import('./textarea')['WxTextarea']

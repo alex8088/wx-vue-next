@@ -18,6 +18,7 @@ import { WxProgress } from './progress'
 import { WxRadio, WxRadioGroup } from './radio'
 import { WxRate } from './rate'
 import { WxSkeleton, WxSkeletonLine, WxSkeletonShape } from './skeleton'
+import { WxSlider } from './slider'
 import { WxSticky } from './sticky'
 import { WxSwitch } from './switch'
 import { WxTextarea } from './textarea'
@@ -54,6 +55,7 @@ const components: Record<string, Plugin> = {
   WxSkeleton,
   WxSkeletonLine,
   WxSkeletonShape,
+  WxSlider,
   WxSticky,
   WxSwitch,
   WxTextarea,
