@@ -1,17 +1,22 @@
 <template>
   <div>
     <transition name="a-fade">
-      <div v-if="visible" class="weui-mask" @click="handleClick"></div>
+      <div
+        v-show="visible"
+        class="weui-mask"
+        @click="handleClick"
+        @touchmove.prevent
+      ></div>
     </transition>
     <transition name="a-slide-bottom">
       <div
-        v-if="visible"
+        v-show="visible"
         :class="[
           'weui-half-screen-dialog',
           { 'weui-half-screen-dialog_large': large }
         ]"
       >
-        <div class="weui-half-screen-dialog__hd">
+        <div class="weui-half-screen-dialog__hd" @touchmove.prevent>
           <div
             v-if="!hideCloseIcon && closeIconPosition === 'left'"
             class="weui-half-screen-dialog__hd__side"
@@ -42,7 +47,11 @@
         <div class="weui-half-screen-dialog__bd">
           <slot></slot>
         </div>
-        <div v-if="$slots.footer" class="weui-half-screen-dialog__ft">
+        <div
+          v-if="$slots.footer"
+          class="weui-half-screen-dialog__ft"
+          @touchmove.prevent
+        >
           <slot name="footer"></slot>
         </div>
       </div>
