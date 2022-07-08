@@ -29,6 +29,7 @@ const componentGroups = [
     components: [
       'Checkbox',
       'Input',
+      'Picker',
       'Radio',
       'Rate',
       'Slider',

@@ -13,6 +13,7 @@ import Input from '../views/Input.vue'
 import Link from '../views/Link.vue'
 import List from '../views/List.vue'
 import MessageBox from '../views/MessageBox.vue'
+import Picker from '../views/Picker.vue'
 import Progress from '../views/Progress.vue'
 import Radio from '../views/Radio.vue'
 import Rate from '../views/Rate.vue'
@@ -91,6 +92,11 @@ const router = createRouter({
       path: '/messagebox',
       name: 'messagebox',
       component: MessageBox
+    },
+    {
+      path: '/picker',
+      name: 'picker',
+      component: Picker
     },
     {
       path: '/progress',
