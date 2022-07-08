@@ -14,6 +14,7 @@ import { WxInput } from './input'
 import { WxLink } from './link'
 import { WxList, WxListItem } from './list'
 import { WxMessageBox } from './message-box'
+import { WxPicker } from './picker'
 import { WxProgress } from './progress'
 import { WxRadio, WxRadioGroup } from './radio'
 import { WxRate } from './rate'
@@ -48,6 +49,7 @@ const components: Record<string, Plugin> = {
   WxList,
   WxListItem,
   WxMessageBox,
+  WxPicker,
   WxProgress,
   WxRadio,
   WxRadioGroup,

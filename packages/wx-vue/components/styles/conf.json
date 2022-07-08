@@ -58,6 +58,13 @@
     "transition",
     "dialog"
   ],
+  "picker": [
+    "mask",
+    "loading",
+    "transition",
+    "half-screen-dialog",
+    "picker"
+  ],
   "progress": [
     "icon",
     "progress"
