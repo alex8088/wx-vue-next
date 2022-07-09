@@ -52,7 +52,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, computed, ref, watch } from 'vue'
+import { defineComponent, computed, ref, watch, type Ref } from 'vue'
 import { pickerProps, type PickerOption, type PickerOptions } from './types'
 import PickerGroup from './picker-group.vue'
 import HalfScreenDialog from '../half-screen-dialog/half-screen-dialog.vue'
@@ -92,7 +92,7 @@ export default defineComponent({
         : props.options.length
     })
 
-    const optionsList = ref<PickerOptions[]>([])
+    const optionsList: Ref<PickerOptions[]> = ref([])
 
     const valueList = ref<(string | number | boolean)[]>([])
 
