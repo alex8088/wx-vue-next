@@ -23,6 +23,7 @@ import Slider from '../views/Slider.vue'
 import Sticky from '../views/Sticky.vue'
 import Switch from '../views/Switch.vue'
 import Textarea from '../views/Textarea.vue'
+import TimePicker from '../views/TimePicker.vue'
 import Toast from '../views/Toast.vue'
 import TopTip from '../views/TopTip.vue'
 
@@ -143,6 +144,11 @@ const router = createRouter({
       path: '/textarea',
       name: 'textarea',
       component: Textarea
+    },
+    {
+      path: '/timepicker',
+      name: 'timepicker',
+      component: TimePicker
     },
     {
       path: '/toast',
