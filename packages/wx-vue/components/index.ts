@@ -25,6 +25,7 @@ export * from './slider'
 export * from './sticky'
 export * from './switch'
 export * from './textarea'
+export * from './time-picker'
 export * from './toast'
 export * from './top-tip'
 
@@ -73,6 +74,7 @@ declare module '@vue/runtime-core' {
     WxSticky: typeof import('./sticky')['WxSticky']
     WxSwitch: typeof import('./switch')['WxSwitch']
     WxTextarea: typeof import('./textarea')['WxTextarea']
+    WxTimePicker: typeof import('./time-picker')['WxTimePicker']
   }
 
   interface ComponentCustomProperties {

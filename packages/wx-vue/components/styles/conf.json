@@ -101,6 +101,12 @@
     "cell",
     "form"
   ],
+  "time-picker": [
+    "mask",
+    "transition",
+    "half-screen-dialog",
+    "picker"
+  ],
   "toast": [
     "mask",
     "transition",

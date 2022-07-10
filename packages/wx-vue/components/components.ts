@@ -24,6 +24,7 @@ import { WxSlider } from './slider'
 import { WxSticky } from './sticky'
 import { WxSwitch } from './switch'
 import { WxTextarea } from './textarea'
+import { WxTimePicker } from './time-picker'
 import { WxToast } from './toast'
 import { WxTopTip } from './top-tip'
 
@@ -63,6 +64,7 @@ const components: Record<string, Plugin> = {
   WxSticky,
   WxSwitch,
   WxTextarea,
+  WxTimePicker,
   WxToast,
   WxTopTip
 }
