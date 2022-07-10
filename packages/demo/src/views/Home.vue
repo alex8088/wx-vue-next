@@ -53,7 +53,7 @@ const componentGroups = [
   {
     name: '导航',
     icon: IconNav,
-    components: []
+    components: ['Tabbar']
   },
   {
     name: '其他',

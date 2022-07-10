@@ -22,6 +22,7 @@ import Skeleton from '../views/Skeleton.vue'
 import Slider from '../views/Slider.vue'
 import Sticky from '../views/Sticky.vue'
 import Switch from '../views/Switch.vue'
+import Tabbar from '../views/Tabbar.vue'
 import Textarea from '../views/Textarea.vue'
 import TimePicker from '../views/TimePicker.vue'
 import Toast from '../views/Toast.vue'
@@ -139,6 +140,11 @@ const router = createRouter({
       path: '/switch',
       name: 'switch',
       component: Switch
+    },
+    {
+      path: '/tabbar',
+      name: 'tabbar',
+      component: Tabbar
     },
     {
       path: '/textarea',
