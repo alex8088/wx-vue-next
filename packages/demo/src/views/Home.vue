@@ -28,6 +28,7 @@ const componentGroups = [
     icon: IconForm,
     components: [
       'Checkbox',
+      'DataPicker',
       'Input',
       'Picker',
       'Radio',

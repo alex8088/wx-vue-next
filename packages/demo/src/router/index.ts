@@ -5,6 +5,7 @@ import ActionSheet from '../views/ActionSheet.vue'
 import Badge from '../views/Badge.vue'
 import Button from '../views/Button.vue'
 import Checkbox from '../views/Checkbox.vue'
+import DatePicker from '../views/DatePicker.vue'
 import Divider from '../views/Divider.vue'
 import Flex from '../views/Flex.vue'
 import Grid from '../views/Grid.vue'
@@ -52,6 +53,11 @@ const router = createRouter({
       path: '/checkbox',
       name: 'checkbox',
       component: Checkbox
+    },
+    {
+      path: '/datapicker',
+      name: 'datapicker',
+      component: DatePicker
     },
     {
       path: '/divider',
