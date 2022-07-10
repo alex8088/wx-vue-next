@@ -23,6 +23,7 @@ import { WxSkeleton, WxSkeletonLine, WxSkeletonShape } from './skeleton'
 import { WxSlider } from './slider'
 import { WxSticky } from './sticky'
 import { WxSwitch } from './switch'
+import { WxTabbar, WxTabbarItem } from './tabbar'
 import { WxTextarea } from './textarea'
 import { WxTimePicker } from './time-picker'
 import { WxToast } from './toast'
@@ -63,6 +64,8 @@ const components: Record<string, Plugin> = {
   WxSlider,
   WxSticky,
   WxSwitch,
+  WxTabbar,
+  WxTabbarItem,
   WxTextarea,
   WxTimePicker,
   WxToast,

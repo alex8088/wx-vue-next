@@ -24,6 +24,7 @@ export * from './skeleton'
 export * from './slider'
 export * from './sticky'
 export * from './switch'
+export * from './tabbar'
 export * from './textarea'
 export * from './time-picker'
 export * from './toast'
@@ -73,6 +74,8 @@ declare module '@vue/runtime-core' {
     WxSlider: typeof import('./slider')['WxSlider']
     WxSticky: typeof import('./sticky')['WxSticky']
     WxSwitch: typeof import('./switch')['WxSwitch']
+    WxTabbar: typeof import('./tabbar')['WxTabbar']
+    WxTabbarItem: typeof import('./tabbar')['WxTabbarItem']
     WxTextarea: typeof import('./textarea')['WxTextarea']
     WxTimePicker: typeof import('./time-picker')['WxTimePicker']
   }

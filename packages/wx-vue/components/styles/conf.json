@@ -97,6 +97,9 @@
     "form",
     "switch"
   ],
+  "tabbar": [
+    "tabbar"
+  ],
   "textarea": [
     "cell",
     "form"
