@@ -4,6 +4,7 @@ import { WxBadge } from './badge'
 import { WxButton } from './button'
 import { WxCheckbox, WxCheckboxGroup } from './checkbox'
 import { WxCollapse, WxCollapseItem } from './collapse'
+import { WxDatePicker } from './date-picker'
 import { WxDialog } from './dialog'
 import { WxDivider } from './divider'
 import { WxFlex, WxFlexItem } from './flex'
@@ -35,6 +36,7 @@ const components: Record<string, Plugin> = {
   WxCheckboxGroup,
   WxCollapse,
   WxCollapseItem,
+  WxDatePicker,
   WxDialog,
   WxDivider,
   WxFlex,

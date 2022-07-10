@@ -5,6 +5,7 @@ export * from './badge'
 export * from './button'
 export * from './checkbox'
 export * from './collapse'
+export * from './date-picker'
 export * from './dialog'
 export * from './divider'
 export * from './flex'
@@ -46,6 +47,7 @@ declare module '@vue/runtime-core' {
     WxCheckboxGroup: typeof import('./checkbox')['WxCheckboxGroup']
     WxCollapse: typeof import('./collapse')['WxCollapse']
     WxCollapseItem: typeof import('./collapse')['WxCollapseItem']
+    WxDatePicker: typeof import('./date-picker')['WxDatePicker']
     WxDialog: typeof import('./dialog')['WxDialog']
     WxDivider: typeof import('./divider')['WxDivider']
     WxFlex: typeof import('./flex')['WxFlex']

@@ -19,6 +19,12 @@
   "collapse": [
     "collapse"
   ],
+  "date-picker": [
+    "mask",
+    "transition",
+    "half-screen-dialog",
+    "picker"
+  ],
   "dialog": [
     "mask",
     "transition",
