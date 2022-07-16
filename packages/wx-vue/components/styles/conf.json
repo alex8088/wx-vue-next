@@ -119,5 +119,9 @@
   "top-tip": [
     "transition",
     "top-tip"
+  ],
+  "uploader": [
+    "icon",
+    "uploader"
   ]
 }

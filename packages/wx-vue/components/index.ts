@@ -29,6 +29,7 @@ export * from './textarea'
 export * from './time-picker'
 export * from './toast'
 export * from './top-tip'
+export * from './uploader'
 
 const install = (app: App, options?: Record<string, unknown>): void => {
   for (const key of Object.keys(components)) {
@@ -78,6 +79,7 @@ declare module '@vue/runtime-core' {
     WxTabbarItem: typeof import('./tabbar')['WxTabbarItem']
     WxTextarea: typeof import('./textarea')['WxTextarea']
     WxTimePicker: typeof import('./time-picker')['WxTimePicker']
+    WxUploader: typeof import('./uploader')['WxUploader']
   }
 
   interface ComponentCustomProperties {

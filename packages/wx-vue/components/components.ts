@@ -28,6 +28,7 @@ import { WxTextarea } from './textarea'
 import { WxTimePicker } from './time-picker'
 import { WxToast } from './toast'
 import { WxTopTip } from './top-tip'
+import { WxUploader } from './uploader'
 
 const components: Record<string, Plugin> = {
   WxActionSheet,
@@ -69,7 +70,8 @@ const components: Record<string, Plugin> = {
   WxTextarea,
   WxTimePicker,
   WxToast,
-  WxTopTip
+  WxTopTip,
+  WxUploader
 }
 
 export default components
