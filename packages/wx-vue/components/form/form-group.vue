@@ -4,6 +4,9 @@
     <div class="weui-cells">
       <slot></slot>
     </div>
+    <div v-if="$slots.action" class="weui-cells__tips">
+      <slot name="action" />
+    </div>
   </div>
 </template>
 
