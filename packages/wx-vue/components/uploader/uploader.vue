@@ -31,10 +31,7 @@
           </div>
         </li>
       </ul>
-      <div
-        v-if="fileList.length < maxUploadCount"
-        class="weui-uploader__input-box"
-      >
+      <div v-if="fileList.length < maxUploadCount" :class="inputBoxCls">
         <input
           class="weui-uploader__input"
           type="file"
@@ -50,7 +47,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, reactive, onBeforeUnmount } from 'vue'
+import { defineComponent, reactive, computed, onBeforeUnmount } from 'vue'
 import { uploaderProps } from './types'
 import type { UploadFile } from './upload'
 import upload from './upload'
@@ -69,6 +66,11 @@ export default defineComponent({
   setup(props, { emit, expose }) {
     let fileId = 0
     const fileList: UploadFile[] = reactive([])
+
+    const inputBoxCls = computed(() => [
+      'weui-uploader__input-box',
+      { 'weui-uploader__input-box_disabled': props.disabled }
+    ])
 
     const onProgress = (file: UploadFile, percent: number): void => {
       file.status = 'progress'
@@ -252,6 +254,7 @@ export default defineComponent({
 
     return {
       fileList,
+      inputBoxCls,
       handleChange,
       handleClick
     }

@@ -1,3 +1,21 @@
+@import "../../base/theme/fn";
+
+.weui-uploader__file {
+  position: relative;
+}
+
+.weui-uploader__input-box.weui-uploader__input-box_disabled {
+
+  &::before,
+  &::after {
+    background-color: #d3d3d3;
+
+    .dark({
+      background-color: #3d3d3d;
+    });
+  }
+}
+
 .weui-uploader__file-opr {
   position: absolute;
   top: 0;
@@ -15,4 +33,8 @@
     width: 16px;
     vertical-align: initial;
   }
+}
+
+.weui-cells__group_form .weui-uploader__file-content .weui-icon-warn {
+  display: inline-block;
 }
