@@ -1,5 +1,6 @@
-import type { PropType, ExtractPropTypes, InjectionKey } from 'vue'
-import type { FormRules } from '../hooks'
+import type { PropType, ExtractPropTypes, InjectionKey, ComputedRef } from 'vue'
+import type { FormRules, FormFieldRule, FormFieldModel } from '../hooks'
+import type { Arrayable } from '../utils'
 
 export const formProps = {
   model: {
@@ -28,6 +29,21 @@ export const formGroupProps = {
 
 export type FormGroupProps = ExtractPropTypes<typeof formGroupProps>
 
+export const formCellProps = {
+  field: String,
+  rules: [Object, Array] as PropType<Arrayable<FormFieldRule>>,
+  label: String,
+  labelWidth: [Number, String],
+  placeholder: String,
+  displayText: String,
+  helpText: String,
+  showArrow: Boolean,
+  disabled: Boolean,
+  required: Boolean
+}
+
+export type FormCellProps = ExtractPropTypes<typeof formCellProps>
+
 export interface FormContext {
   disabled?: boolean
   hideAsterisk?: boolean
@@ -44,3 +60,11 @@ export interface FormGroupContext {
 export const formGroupContextKey: InjectionKey<FormGroupContext> = Symbol(
   'formGroupContextKey'
 )
+
+export interface FormCellContext
+  extends Pick<FormFieldModel, 'validate' | 'clearValidate'> {
+  disabled: ComputedRef<boolean>
+}
+
+export const formCellContextKey: InjectionKey<FormCellContext> =
+  Symbol('formCellContextKey')

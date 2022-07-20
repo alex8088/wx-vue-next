@@ -58,6 +58,7 @@ declare module '@vue/runtime-core' {
     WxFlex: typeof import('./flex')['WxFlex']
     WxFlexItem: typeof import('./flex')['WxFlexItem']
     WxForm: typeof import('./form')['WxForm']
+    WxFormCell: typeof import('./form')['WxFormCell']
     WxFormGroup: typeof import('./form')['WxFormGroup']
     WxGrid: typeof import('./grid')['WxGrid']
     WxGridItem: typeof import('./grid')['WxGridItem']

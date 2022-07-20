@@ -9,7 +9,7 @@ import { WxDatePicker } from './date-picker'
 import { WxDialog } from './dialog'
 import { WxDivider } from './divider'
 import { WxFlex, WxFlexItem } from './flex'
-import { WxForm, WxFormGroup } from './form'
+import { WxForm, WxFormCell, WxFormGroup } from './form'
 import { WxGrid, WxGridItem } from './grid'
 import { WxHalfScreenDialog } from './half-screen-dialog'
 import { WxInput } from './input'
@@ -47,6 +47,7 @@ const components: Record<string, Plugin> = {
   WxFlex,
   WxFlexItem,
   WxForm,
+  WxFormCell,
   WxFormGroup,
   WxGrid,
   WxGridItem,
