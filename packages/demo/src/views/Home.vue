@@ -30,6 +30,7 @@ const componentGroups = [
       'Agree',
       'Checkbox',
       'DataPicker',
+      'Form',
       'Input',
       'Picker',
       'Radio',

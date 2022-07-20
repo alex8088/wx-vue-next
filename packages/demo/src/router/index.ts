@@ -9,6 +9,7 @@ import Checkbox from '../views/Checkbox.vue'
 import DatePicker from '../views/DatePicker.vue'
 import Divider from '../views/Divider.vue'
 import Flex from '../views/Flex.vue'
+import Form from '../views/Form.vue'
 import Grid from '../views/Grid.vue'
 import HalfScreenDialog from '../views/HalfScreenDialog.vue'
 import Input from '../views/Input.vue'
@@ -77,6 +78,11 @@ const router = createRouter({
       path: '/flex',
       name: 'flex',
       component: Flex
+    },
+    {
+      path: '/form',
+      name: 'form',
+      component: Form
     },
     {
       path: '/grid',
