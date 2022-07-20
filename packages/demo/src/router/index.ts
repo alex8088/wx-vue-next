@@ -2,6 +2,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/Home.vue'
 import ActionSheet from '../views/ActionSheet.vue'
+import Agree from '../views/Agree.vue'
 import Badge from '../views/Badge.vue'
 import Button from '../views/Button.vue'
 import Checkbox from '../views/Checkbox.vue'
@@ -40,6 +41,11 @@ const router = createRouter({
       path: '/actionsheet',
       name: 'actionsheet',
       component: ActionSheet
+    },
+    {
+      path: '/agree',
+      name: 'agree',
+      component: Agree
     },
     {
       path: '/badge',

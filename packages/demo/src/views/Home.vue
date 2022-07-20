@@ -27,6 +27,7 @@ const componentGroups = [
     name: '表单',
     icon: IconForm,
     components: [
+      'Agree',
       'Checkbox',
       'DataPicker',
       'Input',
