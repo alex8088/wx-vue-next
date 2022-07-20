@@ -37,7 +37,8 @@ const componentGroups = [
       'Slider',
       'Switch',
       'Textarea',
-      'TimePicker'
+      'TimePicker',
+      'Uploader'
     ]
   },
   {

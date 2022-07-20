@@ -28,6 +28,7 @@ import Textarea from '../views/Textarea.vue'
 import TimePicker from '../views/TimePicker.vue'
 import Toast from '../views/Toast.vue'
 import TopTip from '../views/TopTip.vue'
+import Uploader from '../views/Uploader.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -171,6 +172,11 @@ const router = createRouter({
       path: '/toptip',
       name: 'toptip',
       component: TopTip
+    },
+    {
+      path: '/uploader',
+      name: 'uploader',
+      component: Uploader
     }
   ]
 })
