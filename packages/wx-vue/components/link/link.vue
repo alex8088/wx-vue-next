@@ -1,5 +1,5 @@
 <template>
-  <a class="weui-link" :href="href" @click="(e) => $emit('click', e)">
+  <a class="weui-link" :href="href" @click.prevent="(e) => $emit('click', e)">
     <slot />
   </a>
 </template>
