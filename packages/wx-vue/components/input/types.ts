@@ -15,7 +15,7 @@ export const inputProps = {
   },
   label: String,
   labelWidth: [Number, String],
-  desc: String,
+  helpText: String,
   cellStyle: Object,
   clearable: Boolean,
   required: Boolean,

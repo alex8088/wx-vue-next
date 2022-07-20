@@ -1,5 +1,5 @@
 <template>
-  <label :for="inputId" :class="cls" :style="cellStyle">
+  <label :for="inputId" :class="cls">
     <div v-if="label || $slots.prefix" class="weui-cell__hd">
       <slot name="prefix">
         <span class="weui-label" :style="labelSyl">{{ label }}</span>
@@ -30,14 +30,14 @@
         </button>
       </div>
       <div
-        v-if="validateMessage || desc"
+        v-if="validateMessage || helpText"
         role="alert"
         :class="[
           'weui-cell__tips',
           { 'weui-cell__tips_warn': validateMessage }
         ]"
       >
-        {{ validateMessage || desc }}
+        {{ validateMessage || helpText }}
       </div>
     </div>
     <div class="weui-cell__ft">
@@ -82,7 +82,7 @@ export default defineComponent({
     const cls = computed(() => [
       'weui-cell',
       { 'weui-cell_active': !(slots.prefix || slots.suffix) },
-      { 'weui-cell_flex-wrap': validateMessage.value || props.desc },
+      { 'weui-cell_flex-wrap': validateMessage.value || props.helpText },
       { 'weui-cell_disabled': inputDisabled.value || props.readonly },
       { 'weui-cell_asterisk': !form?.hideAsterisk && inputRequired.value }
     ])
