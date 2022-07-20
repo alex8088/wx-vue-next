@@ -91,7 +91,7 @@ const handleSubmit = (valid, _): void => {
         <wx-input
           label="收货地址"
           placeholder="请输入收货地址"
-          desc="描述信息"
+          help-text="描述信息"
         />
       </wx-form-group>
       <wx-form-group title="显示清除" :label-width="64">
