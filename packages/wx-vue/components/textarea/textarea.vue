@@ -24,7 +24,7 @@
           aria-live="polite"
           class="weui-textarea-counter"
         >
-          <span>{{ textareaValue.length }}</span>
+          <span>{{ textareaValue ? textareaValue.length : 0 }}</span>
           /{{ maxLength }}
         </div>
       </div>
