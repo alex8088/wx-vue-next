@@ -1,5 +1,5 @@
 <template>
-  <label :for="inputId" :class="cls">
+  <label :for="inputId" :class="cls" :style="cellStyle">
     <div v-if="label || $slots.prefix" class="weui-cell__hd">
       <slot name="prefix">
         <span class="weui-label" :style="labelSyl">{{ label }}</span>
