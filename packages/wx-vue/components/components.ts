@@ -20,6 +20,7 @@ import { WxPicker } from './picker'
 import { WxProgress } from './progress'
 import { WxRadio, WxRadioGroup } from './radio'
 import { WxRate } from './rate'
+import { WxSearchBar } from './search-bar'
 import { WxSkeleton, WxSkeletonLine, WxSkeletonShape } from './skeleton'
 import { WxSlider } from './slider'
 import { WxSticky } from './sticky'
@@ -62,6 +63,7 @@ const components: Record<string, Plugin> = {
   WxRadio,
   WxRadioGroup,
   WxRate,
+  WxSearchBar,
   WxSkeleton,
   WxSkeletonLine,
   WxSkeletonShape,
