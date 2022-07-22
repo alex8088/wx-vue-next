@@ -20,6 +20,7 @@ import Picker from '../views/Picker.vue'
 import Progress from '../views/Progress.vue'
 import Radio from '../views/Radio.vue'
 import Rate from '../views/Rate.vue'
+import SearchBar from '../views/SearchBar.vue'
 import Skeleton from '../views/Skeleton.vue'
 import Slider from '../views/Slider.vue'
 import Sticky from '../views/Sticky.vue'
@@ -133,6 +134,11 @@ const router = createRouter({
       path: '/rate',
       name: 'rate',
       component: Rate
+    },
+    {
+      path: '/searchbar',
+      name: 'searchbar',
+      component: SearchBar
     },
     {
       path: '/skeleton',

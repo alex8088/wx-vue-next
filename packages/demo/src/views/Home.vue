@@ -35,6 +35,7 @@ const componentGroups = [
       'Picker',
       'Radio',
       'Rate',
+      'SearchBar',
       'Slider',
       'Switch',
       'Textarea',
