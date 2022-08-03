@@ -1,0 +1,174 @@
+@import "../../base/fn";
+
+@weuiTabsHeight: 28px;
+@weuiTabsLineHeight: 2px;
+@weuiTabsActiveColor: @weuiColorPrimary;
+
+.weui-tabs {
+  --tab-line-height: @weuiTabsLineHeight;
+  --tab-active-color: @weuiTabsActiveColor;
+}
+
+.weui-tabs__bar {
+  position: relative;
+  background-color: var(--weui-BG-2);
+  box-sizing: border-box;
+  user-select: none;
+  overflow: hidden;
+
+  &:after {
+    .setBottomLine(@weuiLineColorLight);
+  }
+
+  &-area {
+    display: flex;
+    position: relative;
+  }
+
+  &_scrollable {
+    .weui-tabs__bar-area {
+      overflow-x: auto;
+      overflow-y: hidden;
+      -webkit-overflow-scrolling: touch;
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+
+      .weui-tab__item {
+        flex: 0 0 22%;
+      }
+    }
+  }
+}
+
+.weui-tab__item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  padding: 8px;
+  text-align: center;
+  font-size: 14px;
+  line-height: @weuiTabsHeight;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+
+  .setTapColor();
+
+  &&_on {
+    color: var(--tab-active-color);
+  }
+
+  &&_disabled {
+    color: var(--weui-FG-1);
+  }
+
+  svg,
+  img {
+    height: 20px;
+    width: 20px;
+    margin: 0 4px;
+  }
+}
+
+.weui-tab__line {
+  position: absolute;
+  z-index: 1;
+  height: var(--tab-line-height);
+  bottom: 0;
+  left: 0;
+  background-color: var(--tab-active-color);
+}
+
+.weui-tabs__pane {
+  display: block;
+  background-color: var(--weui-BG-2);
+  position: relative;
+  overflow: hidden;
+
+  &-content {
+    box-sizing: border-box;
+    padding: 20px;
+    left: 0;
+    top: 0;
+    right: 0;
+    width: 100%;
+  }
+}
+
+.forward {
+  @animation-duration: 0.25s;
+
+  &-enter-active {
+    animation: forwardSlideIn @animation-duration forwards;
+  }
+
+  &-leave-active {
+    animation: forwardSlideOut @animation-duration forwards;
+    position: absolute;
+  }
+}
+
+.back {
+  @animation-duration: 0.25s;
+
+  &-enter-active {
+    animation: backSlideIn @animation-duration forwards;
+  }
+
+  &-leave-active {
+    animation: backSlideOut @animation-duration forwards;
+    position: absolute;
+  }
+}
+
+@keyframes forwardSlideIn {
+  from {
+    transform: translate3d(100%, 0, 0);
+    opacity: 0;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes forwardSlideOut {
+  from {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+
+  to {
+    transform: translate3d(-100%, 0, 0);
+    opacity: 0;
+  }
+}
+
+@keyframes backSlideIn {
+  from {
+    transform: translate3d(-100%, 0, 0);
+    opacity: 0;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes backSlideOut {
+  from {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+
+  to {
+    transform: translate3d(100%, 0, 0);
+    opacity: 0;
+  }
+}

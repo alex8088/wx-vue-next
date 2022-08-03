@@ -27,6 +27,7 @@ export * from './slider'
 export * from './sticky'
 export * from './switch'
 export * from './tabbar'
+export * from './tabs'
 export * from './textarea'
 export * from './time-picker'
 export * from './toast'
@@ -82,6 +83,8 @@ declare module '@vue/runtime-core' {
     WxSwitch: typeof import('./switch')['WxSwitch']
     WxTabbar: typeof import('./tabbar')['WxTabbar']
     WxTabbarItem: typeof import('./tabbar')['WxTabbarItem']
+    WxTabPane: typeof import('./tabs')['WxTabPane']
+    WxTabs: typeof import('./tabs')['WxTabs']
     WxTextarea: typeof import('./textarea')['WxTextarea']
     WxTimePicker: typeof import('./time-picker')['WxTimePicker']
     WxUploader: typeof import('./uploader')['WxUploader']

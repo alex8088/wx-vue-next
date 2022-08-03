@@ -26,6 +26,7 @@ import { WxSlider } from './slider'
 import { WxSticky } from './sticky'
 import { WxSwitch } from './switch'
 import { WxTabbar, WxTabbarItem } from './tabbar'
+import { WxTabPane, WxTabs } from './tabs'
 import { WxTextarea } from './textarea'
 import { WxTimePicker } from './time-picker'
 import { WxToast } from './toast'
@@ -72,6 +73,8 @@ const components: Record<string, Plugin> = {
   WxSwitch,
   WxTabbar,
   WxTabbarItem,
+  WxTabPane,
+  WxTabs,
   WxTextarea,
   WxTimePicker,
   WxToast,

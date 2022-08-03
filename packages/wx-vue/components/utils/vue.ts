@@ -1,4 +1,5 @@
-import type { App, Plugin, InjectionKey } from 'vue'
+import type { App, Plugin, InjectionKey, VNode, Component } from 'vue'
+import { Fragment } from 'vue'
 
 export type WithInstallType<T> = T & Plugin
 
@@ -17,4 +18,20 @@ export const createInjectionKey = <T>(
   description?: string | number
 ): InjectionKey<T> => {
   return Symbol(description)
+}
+
+export const flattenChildren = (
+  vnodes: VNode[] = [],
+  name: string
+): VNode[] => {
+  const components: VNode[] = []
+  vnodes.forEach((vnode) => {
+    if ((vnode.type as Component).name === name) {
+      components.push(vnode)
+    } else if (vnode.type === Fragment) {
+      components.push(...flattenChildren(vnode.children as VNode[], name))
+    }
+  })
+
+  return components
 }
