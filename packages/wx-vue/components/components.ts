@@ -21,6 +21,7 @@ import { WxProgress } from './progress'
 import { WxRadio, WxRadioGroup } from './radio'
 import { WxRate } from './rate'
 import { WxSearchBar } from './search-bar'
+import { WxSidebar, WxSidebarPane } from './sidebar'
 import { WxSkeleton, WxSkeletonLine, WxSkeletonShape } from './skeleton'
 import { WxSlider } from './slider'
 import { WxSticky } from './sticky'
@@ -65,6 +66,8 @@ const components: Record<string, Plugin> = {
   WxRadioGroup,
   WxRate,
   WxSearchBar,
+  WxSidebar,
+  WxSidebarPane,
   WxSkeleton,
   WxSkeletonLine,
   WxSkeletonShape,

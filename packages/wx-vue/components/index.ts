@@ -22,6 +22,7 @@ export * from './progress'
 export * from './radio'
 export * from './rate'
 export * from './search-bar'
+export * from './sidebar'
 export * from './skeleton'
 export * from './slider'
 export * from './sticky'
@@ -75,6 +76,8 @@ declare module '@vue/runtime-core' {
     WxRadioGroup: typeof import('./radio')['WxRadioGroup']
     WxRate: typeof import('./rate')['WxRate']
     WxSearchBar: typeof import('./search-bar')['WxSearchBar']
+    WxSidebar: typeof import('./sidebar')['WxSidebar']
+    WxSidebarPane: typeof import('./sidebar')['WxSidebarPane']
     WxSkeleton: typeof import('./skeleton')['WxSkeleton']
     WxSkeletonLine: typeof import('./skeleton')['WxSkeletonLine']
     WxSkeletonShape: typeof import('./skeleton')['WxSkeletonShape']

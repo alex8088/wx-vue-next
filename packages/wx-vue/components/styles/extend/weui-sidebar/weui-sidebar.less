@@ -1,0 +1,87 @@
+@import "../../base/fn";
+
+@weuiSidebarTabWidth: 92px;
+@weuiSidebarTabHeight: 52px;
+@weuiSidebarTabFontSize: 14px;
+@weuiSidebarTabPadding: 0 12px;
+@weuiSidebarTabColor: var(--weui-FG-0);
+@weuiSidebarTabBg: var(--weui-BG-1);
+@weuiSidebarTabActiveBg: var(--weui-BG);
+@weuiSidebarTabDisabledColor: var(--weui-FG-1);
+@weuiSidebarBorderLineWidth: 4px;
+@weuiSidebarBorderLineHeight: 20px;
+@weuiSidebarBorderLineColor: @weuiColorPrimary;
+@weuiSidebarPaneBg: var(--weui-BG);
+@weuiSidebarPanePadding: 10px;
+
+.weui-sidebar {
+  --sidebar-border-line-width: @weuiSidebarBorderLineWidth;
+  --sidebar-border-line-height: @weuiSidebarBorderLineHeight;
+  --sidebar-border-line-color: @weuiSidebarBorderLineColor;
+
+  display: flex;
+  flex-direction: row;
+
+  &__bar {
+    position: relative;
+    height: 100%;
+    width: @weuiSidebarTabWidth;
+    background-color: @weuiSidebarTabBg;
+    user-select: none;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  &__item {
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    padding: @weuiSidebarTabPadding;
+    color: @weuiSidebarTabColor;
+    font-size: @weuiSidebarTabFontSize;
+    height: @weuiSidebarTabHeight;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+
+    .text_wrap();
+
+    .setTapColor();
+
+    &&_on {
+      background-color: @weuiSidebarTabActiveBg;
+
+      &::before {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: var(--sidebar-border-line-width);
+        height: var(--sidebar-border-line-height);
+        background-color: var(--sidebar-border-line-color);
+        transform: translateY(-50%);
+        content: '';
+      }
+    }
+
+    &&_disabled {
+      color: @weuiSidebarTabDisabledColor;
+    }
+  }
+
+  &__pane {
+    flex: 1;
+    display: block;
+    background-color: @weuiSidebarPaneBg;
+
+    &-content {
+      box-sizing: border-box;
+      padding: @weuiSidebarPanePadding;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
