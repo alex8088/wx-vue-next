@@ -21,7 +21,15 @@ const componentGroups = [
   {
     name: '基础',
     icon: IconBase,
-    components: ['Badge', 'Button', 'Divider', 'Link', 'Progress', 'Skeleton']
+    components: [
+      'Badge',
+      'Button',
+      'Collapse',
+      'Divider',
+      'Link',
+      'Progress',
+      'Skeleton'
+    ]
   },
   {
     name: '表单',
@@ -94,7 +102,7 @@ const handleClick = (to: string): void => {
       <div class="hero__desc">基于 WeUI 设计，轻量、好看的移动端组件库</div>
     </template>
     <div class="hero__components">
-      <WxCollapse accordion>
+      <WxCollapse accordion spacing>
         <WxCollapseItem v-for="(g, i) in componentGroups" :key="i">
           <template #header>
             <WxFlex>

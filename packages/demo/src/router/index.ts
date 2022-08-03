@@ -6,6 +6,7 @@ import Agree from '../views/Agree.vue'
 import Badge from '../views/Badge.vue'
 import Button from '../views/Button.vue'
 import Checkbox from '../views/Checkbox.vue'
+import Collapse from '../views/Collapse.vue'
 import DatePicker from '../views/DatePicker.vue'
 import Divider from '../views/Divider.vue'
 import Flex from '../views/Flex.vue'
@@ -66,6 +67,11 @@ const router = createRouter({
       path: '/checkbox',
       name: 'checkbox',
       component: Checkbox
+    },
+    {
+      path: '/collapse',
+      name: 'collapse',
+      component: Collapse
     },
     {
       path: '/datapicker',
