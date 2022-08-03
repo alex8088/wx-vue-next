@@ -4,7 +4,8 @@
       'weui-collapse__item',
       {
         'weui-collapse__item-expanded': expanded,
-        'weui-collapse__item-disabled': disabled
+        'weui-collapse__item-disabled': disabled,
+        'weui-collapse__item-spacing': spacing
       }
     ]"
   >
@@ -16,7 +17,9 @@
       @click="handleClick"
     >
       <slot name="header">
-        <p class="weui-collapse__title">{{ title }}</p>
+        <p class="weui-collapse__title">
+          <slot name="title">{{ title }}</slot>
+        </p>
       </slot>
     </div>
     <collapse-transition>
@@ -50,6 +53,7 @@ export default defineComponent({
     }
 
     return {
+      spacing: collapse?.spacing,
       expanded,
       handleClick
     }

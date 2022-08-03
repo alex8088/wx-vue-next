@@ -15,13 +15,36 @@
 }
 
 .weui-collapse__item {
+    position: relative;
     background-color: @weuiCollapseBG;
 
-    &:not(:first-child) {
-        margin-top: @weuiCollapseSpaceing;
+    &&-spacing {
+        &:not(:first-child) {
+            margin-top: @weuiCollapseSpaceing;
+        }
+
+        .weui-collapse__bd {
+            &:before {
+                content: none;
+            }
+        }
     }
 
-    &.weui-collapse__item-expanded {
+    &:not(&-spacing) {
+        &:after {
+            .setBottomLine(@weuiLineColorLight);
+            left: @weuiCollapsePaddingLeftRight;
+            right: @weuiCollapsePaddingLeftRight;
+        }
+    }
+
+    &:last-child {
+        &::after {
+            content: none;
+        }
+    }
+
+    &&-expanded {
         .weui-collapse__title {
             &:after {
                 transform: rotate(-90deg);
@@ -29,7 +52,7 @@
         }
     }
 
-    &.weui-collapse__item-disabled {
+    &&-disabled {
         .weui-collapse__title {
             color: @weuiCollapseDisabled;
 
@@ -78,6 +101,8 @@
 
     &:before {
         .setTopLine(@weuiLineColorLight);
+        left: @weuiCollapsePaddingLeftRight;
+        right: @weuiCollapsePaddingLeftRight;
     }
 }
 

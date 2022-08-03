@@ -5,7 +5,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, ref, watch, provide } from 'vue'
+import { defineComponent, ref, watch, provide, toRef } from 'vue'
 import {
   collapseProps,
   collapseContextKey,
@@ -46,6 +46,7 @@ export default defineComponent({
     )
 
     provide(collapseContextKey, {
+      spacing: toRef(props, 'spacing'),
       activeNames,
       handleItemClick
     })

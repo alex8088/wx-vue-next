@@ -10,6 +10,7 @@ export const collapseProps = {
     type: [Array, String, Number] as PropType<CollapseModelValue>,
     default: (): CollapseModelValue => []
   },
+  spacing: Boolean,
   accordion: Boolean
 }
 
@@ -27,6 +28,7 @@ export const collapseItemProps = {
 export type CollapseItemProps = ExtractPropTypes<typeof collapseItemProps>
 
 export interface CollapseContext {
+  spacing: Ref<boolean>
   activeNames: Ref<CollapseActiveName[]>
   handleItemClick: (name: CollapseActiveName) => void
 }
