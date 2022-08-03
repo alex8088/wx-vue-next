@@ -26,6 +26,7 @@ import Slider from '../views/Slider.vue'
 import Sticky from '../views/Sticky.vue'
 import Switch from '../views/Switch.vue'
 import Tabbar from '../views/Tabbar.vue'
+import Tabs from '../views/Tabs.vue'
 import Textarea from '../views/Textarea.vue'
 import TimePicker from '../views/TimePicker.vue'
 import Toast from '../views/Toast.vue'
@@ -164,6 +165,11 @@ const router = createRouter({
       path: '/tabbar',
       name: 'tabbar',
       component: Tabbar
+    },
+    {
+      path: '/tabs',
+      name: 'tabs',
+      component: Tabs
     },
     {
       path: '/textarea',

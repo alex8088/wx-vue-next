@@ -57,7 +57,7 @@ const componentGroups = [
   {
     name: '导航',
     icon: IconNav,
-    components: ['Tabbar']
+    components: ['Tabbar', 'Tabs']
   },
   {
     name: '其他',
