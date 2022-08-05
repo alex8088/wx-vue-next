@@ -105,7 +105,7 @@ const handleSubmit = (valid, _): void => {
       <wx-form-group title="自定义-图标">
         <wx-input placeholder="请输入帐号或手机号">
           <template #prefix>
-            <IconUser />
+            <IconUser :style="{ fill: '#0000004d' }" />
           </template>
         </wx-input>
       </wx-form-group>

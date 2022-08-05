@@ -3,6 +3,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/Home.vue'
 import ActionSheet from '../views/ActionSheet.vue'
 import Agree from '../views/Agree.vue'
+import Avatar from '../views/Avatar.vue'
 import Badge from '../views/Badge.vue'
 import Button from '../views/Button.vue'
 import Checkbox from '../views/Checkbox.vue'
@@ -52,6 +53,11 @@ const router = createRouter({
       path: '/agree',
       name: 'agree',
       component: Agree
+    },
+    {
+      path: '/avatar',
+      name: 'avatar',
+      component: Avatar
     },
     {
       path: '/badge',

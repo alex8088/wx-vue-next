@@ -22,6 +22,7 @@ const componentGroups = [
     name: '基础',
     icon: IconBase,
     components: [
+      'Avatar',
       'Badge',
       'Button',
       'Collapse',
