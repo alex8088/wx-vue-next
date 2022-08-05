@@ -2,6 +2,7 @@ import type { App } from 'vue'
 import components from './components'
 export * from './action-sheet'
 export * from './agree'
+export * from './avatar'
 export * from './badge'
 export * from './button'
 export * from './checkbox'
@@ -49,6 +50,8 @@ declare module '@vue/runtime-core' {
     WxActionSheet: typeof import('./action-sheet')['WxActionSheet']
     WxActionSheetItem: typeof import('./action-sheet')['WxActionSheetItem']
     WxAgree: typeof import('./agree')['WxAgree']
+    WxAvatar: typeof import('./avatar')['WxAvatar']
+    WxAvatarGroup: typeof import('./avatar')['WxAvatarGroup']
     WxBadge: typeof import('./badge')['WxBadge']
     WxButton: typeof import('./button')['WxButton']
     WxCheckbox: typeof import('./checkbox')['WxCheckbox']

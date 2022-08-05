@@ -1,6 +1,7 @@
 import type { Plugin } from 'vue'
 import { WxActionSheet, WxActionSheetItem } from './action-sheet'
 import { WxAgree } from './agree'
+import { WxAvatar, WxAvatarGroup } from './avatar'
 import { WxBadge } from './badge'
 import { WxButton } from './button'
 import { WxCheckbox, WxCheckboxGroup } from './checkbox'
@@ -38,6 +39,8 @@ const components: Record<string, Plugin> = {
   WxActionSheet,
   WxActionSheetItem,
   WxAgree,
+  WxAvatar,
+  WxAvatarGroup,
   WxBadge,
   WxButton,
   WxCheckbox,

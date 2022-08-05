@@ -5,18 +5,21 @@
       :key="i"
       :class="[
         'weui-rate__item',
-        { 'weui-rate__item_active': modelValue >= i }
+        { 'weui-rate__item_active': (modelValue || 0) >= i }
       ]"
-      :style="[starSyl, { backgroundColor: modelValue >= i ? color : '' }]"
+      :style="[
+        starSyl,
+        { backgroundColor: (modelValue || 0) >= i ? color : '' }
+      ]"
       role="radio"
-      :aria-checked="modelValue >= i"
+      :aria-checked="(modelValue || 0) >= i"
       :aria-setsize="count"
       :aria-posinset="i"
       @click="handleClick(i)"
     ></div>
     <slot name="text">
       <div v-if="texts.length > 0" class="weui-rate__desc">
-        {{ texts[modelValue - 1] }}
+        {{ texts[(modelValue || 0) - 1] }}
       </div>
     </slot>
   </div>
