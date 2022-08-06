@@ -17,6 +17,7 @@ import HalfScreenDialog from '../views/HalfScreenDialog.vue'
 import Input from '../views/Input.vue'
 import Link from '../views/Link.vue'
 import List from '../views/List.vue'
+import Loading from '../views/Loading.vue'
 import MessageBox from '../views/MessageBox.vue'
 import Picker from '../views/Picker.vue'
 import Progress from '../views/Progress.vue'
@@ -123,6 +124,11 @@ const router = createRouter({
       path: '/list',
       name: 'list',
       component: List
+    },
+    {
+      path: '/loading',
+      name: 'loading',
+      component: Loading
     },
     {
       path: '/messagebox',

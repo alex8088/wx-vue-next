@@ -28,6 +28,7 @@ const componentGroups = [
       'Collapse',
       'Divider',
       'Link',
+      'Loading',
       'Progress',
       'Skeleton'
     ]
