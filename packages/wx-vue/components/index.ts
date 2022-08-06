@@ -17,6 +17,7 @@ export * from './half-screen-dialog'
 export * from './input'
 export * from './link'
 export * from './list'
+export * from './loading'
 export * from './message-box'
 export * from './picker'
 export * from './progress'
@@ -73,6 +74,7 @@ declare module '@vue/runtime-core' {
     WxLink: typeof import('./link')['WxLink']
     WxList: typeof import('./list')['WxList']
     WxListItem: typeof import('./list')['WxListItem']
+    WxLoading: typeof import('./loading')['WxLoading']
     WxPicker: typeof import('./picker')['WxPicker']
     WxProgress: typeof import('./progress')['WxProgress']
     WxRadio: typeof import('./radio')['WxRadio']

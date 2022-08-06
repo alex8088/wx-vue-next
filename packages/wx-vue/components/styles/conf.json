@@ -65,6 +65,9 @@
   "list": [
     "cell"
   ],
+  "loading": [
+    "loading"
+  ],
   "message-box": [
     "mask",
     "transition",

@@ -16,6 +16,7 @@ import { WxHalfScreenDialog } from './half-screen-dialog'
 import { WxInput } from './input'
 import { WxLink } from './link'
 import { WxList, WxListItem } from './list'
+import { WxLoading } from './loading'
 import { WxMessageBox } from './message-box'
 import { WxPicker } from './picker'
 import { WxProgress } from './progress'
@@ -62,6 +63,7 @@ const components: Record<string, Plugin> = {
   WxLink,
   WxList,
   WxListItem,
+  WxLoading,
   WxMessageBox,
   WxPicker,
   WxProgress,
