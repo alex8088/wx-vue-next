@@ -7,7 +7,6 @@ import { WxButton } from './button'
 import { WxCheckbox, WxCheckboxGroup } from './checkbox'
 import { WxCollapse, WxCollapseItem } from './collapse'
 import { WxDatePicker } from './date-picker'
-import { WxDialog } from './dialog'
 import { WxDivider } from './divider'
 import { WxFlex, WxFlexItem } from './flex'
 import { WxForm, WxFormCell, WxFormGroup } from './form'
@@ -18,6 +17,7 @@ import { WxLink } from './link'
 import { WxList, WxListItem } from './list'
 import { WxLoading } from './loading'
 import { WxMessageBox } from './message-box'
+import { WxOverlay } from './overlay'
 import { WxPicker } from './picker'
 import { WxProgress } from './progress'
 import { WxRadio, WxRadioGroup } from './radio'
@@ -49,7 +49,6 @@ const components: Record<string, Plugin> = {
   WxCollapse,
   WxCollapseItem,
   WxDatePicker,
-  WxDialog,
   WxDivider,
   WxFlex,
   WxFlexItem,
@@ -65,6 +64,7 @@ const components: Record<string, Plugin> = {
   WxListItem,
   WxLoading,
   WxMessageBox,
+  WxOverlay,
   WxPicker,
   WxProgress,
   WxRadio,

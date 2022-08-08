@@ -31,11 +31,6 @@
     "half-screen-dialog",
     "picker"
   ],
-  "dialog": [
-    "mask",
-    "transition",
-    "dialog"
-  ],
   "divider": [
     "loadmore"
   ],
@@ -72,6 +67,11 @@
     "mask",
     "transition",
     "dialog"
+  ],
+  "overlay": [
+    "transition",
+    "mask",
+    "overlay"
   ],
   "picker": [
     "mask",

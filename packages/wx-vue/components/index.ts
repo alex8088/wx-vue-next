@@ -8,7 +8,6 @@ export * from './button'
 export * from './checkbox'
 export * from './collapse'
 export * from './date-picker'
-export * from './dialog'
 export * from './divider'
 export * from './flex'
 export * from './form'
@@ -19,6 +18,7 @@ export * from './link'
 export * from './list'
 export * from './loading'
 export * from './message-box'
+export * from './overlay'
 export * from './picker'
 export * from './progress'
 export * from './radio'
@@ -60,7 +60,6 @@ declare module '@vue/runtime-core' {
     WxCollapse: typeof import('./collapse')['WxCollapse']
     WxCollapseItem: typeof import('./collapse')['WxCollapseItem']
     WxDatePicker: typeof import('./date-picker')['WxDatePicker']
-    WxDialog: typeof import('./dialog')['WxDialog']
     WxDivider: typeof import('./divider')['WxDivider']
     WxFlex: typeof import('./flex')['WxFlex']
     WxFlexItem: typeof import('./flex')['WxFlexItem']
@@ -75,6 +74,7 @@ declare module '@vue/runtime-core' {
     WxList: typeof import('./list')['WxList']
     WxListItem: typeof import('./list')['WxListItem']
     WxLoading: typeof import('./loading')['WxLoading']
+    WxOverlay: typeof import('./overlay')['WxOverlay']
     WxPicker: typeof import('./picker')['WxPicker']
     WxProgress: typeof import('./progress')['WxProgress']
     WxRadio: typeof import('./radio')['WxRadio']
