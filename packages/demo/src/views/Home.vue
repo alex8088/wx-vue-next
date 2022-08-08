@@ -60,6 +60,7 @@ const componentGroups = [
       'Action Sheet',
       'Half Screen Dialog',
       'Message Box',
+      'Overlay',
       'Toast',
       'TopTip'
     ]

@@ -19,6 +19,7 @@ import Link from '../views/Link.vue'
 import List from '../views/List.vue'
 import Loading from '../views/Loading.vue'
 import MessageBox from '../views/MessageBox.vue'
+import Overlay from '../views/Overlay.vue'
 import Picker from '../views/Picker.vue'
 import Progress from '../views/Progress.vue'
 import Radio from '../views/Radio.vue'
@@ -134,6 +135,11 @@ const router = createRouter({
       path: '/messagebox',
       name: 'messagebox',
       component: MessageBox
+    },
+    {
+      path: '/overlay',
+      name: 'overlay',
+      component: Overlay
     },
     {
       path: '/picker',
