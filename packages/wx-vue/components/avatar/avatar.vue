@@ -21,6 +21,7 @@ import { avatarProps } from './props'
 import { avatarGroupContentKey, type AvatarGroupContent } from './content'
 import type { AvatarShape, AvatarSize } from './types'
 import { isNumber } from '../utils'
+import { useResizeObserver } from '../hooks'
 
 export default defineComponent({
   name: 'WxAvatar',
@@ -28,6 +29,10 @@ export default defineComponent({
   setup(props) {
     const avatarRef = ref<HTMLElement>()
     const innerRef = ref<HTMLElement>()
+
+    useResizeObserver(innerRef, (_) => {
+      setScale()
+    })
 
     const aGroup = inject<AvatarGroupContent | undefined>(
       avatarGroupContentKey,
