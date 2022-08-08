@@ -1,6 +1,15 @@
 <script setup lang="ts">
+import { ref, computed } from 'vue'
 import Page from '../components/Page.vue'
 import IconUser from '../components/icons/IconUser.vue'
+
+const list = ['W', 'Alex', 'Vue', 'China', 'BO']
+const index = ref(0)
+const content = computed(() => list[index.value])
+
+const handleClick = (): void => {
+  index.value = index.value >= list.length - 1 ? 0 : ++index.value
+}
 </script>
 
 <template>
@@ -35,6 +44,20 @@ import IconUser from '../components/icons/IconUser.vue'
     <div class="avatar-spacing">
       <wx-badge :content="8"><wx-avatar shape="square">A</wx-avatar></wx-badge>
       <wx-badge dot><wx-avatar shape="square">A</wx-avatar></wx-badge>
+    </div>
+    <wx-divider>自动调整字体大小</wx-divider>
+    <div class="avatar-spacing">
+      <wx-avatar shape="square" :style="{ backgroundColor: '#2d88cb' }">
+        {{ content }}
+      </wx-avatar>
+      <wx-button
+        type="light"
+        mini
+        style="margin-left: 12px"
+        @click="handleClick"
+      >
+        Change
+      </wx-button>
     </div>
     <wx-divider>头像组</wx-divider>
     <div class="avatar-spacing">
