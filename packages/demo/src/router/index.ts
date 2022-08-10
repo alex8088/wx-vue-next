@@ -14,6 +14,7 @@ import Flex from '../views/Flex.vue'
 import Form from '../views/Form.vue'
 import Grid from '../views/Grid.vue'
 import HalfScreenDialog from '../views/HalfScreenDialog.vue'
+import Image from '../views/Image.vue'
 import Input from '../views/Input.vue'
 import Link from '../views/Link.vue'
 import List from '../views/List.vue'
@@ -110,6 +111,11 @@ const router = createRouter({
       path: '/halfscreendialog',
       name: 'halfscreendialog',
       component: HalfScreenDialog
+    },
+    {
+      path: '/image',
+      name: 'image',
+      component: Image
     },
     {
       path: '/input',

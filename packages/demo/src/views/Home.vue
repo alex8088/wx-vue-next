@@ -27,6 +27,7 @@ const componentGroups = [
       'Button',
       'Collapse',
       'Divider',
+      'Image',
       'Link',
       'Loading',
       'Progress',
