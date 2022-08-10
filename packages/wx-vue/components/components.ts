@@ -12,6 +12,7 @@ import { WxFlex, WxFlexItem } from './flex'
 import { WxForm, WxFormCell, WxFormGroup } from './form'
 import { WxGrid, WxGridItem } from './grid'
 import { WxHalfScreenDialog } from './half-screen-dialog'
+import { WxImage } from './image'
 import { WxInput } from './input'
 import { WxLink } from './link'
 import { WxList, WxListItem } from './list'
@@ -58,6 +59,7 @@ const components: Record<string, Plugin> = {
   WxGrid,
   WxGridItem,
   WxHalfScreenDialog,
+  WxImage,
   WxInput,
   WxLink,
   WxList,

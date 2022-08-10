@@ -1,0 +1,40 @@
+@import "../../base/theme/fn";
+
+.weui-image {
+  position: relative;
+  display: inline-block;
+
+  &_loaded &__inner {
+    visibility: visible;
+  }
+
+  &__inner {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    vertical-align: bottom;
+    visibility: hidden;
+  }
+
+  &__wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: @weuiBgColorDefault;
+    color: @weuiTextColorTips;
+  }
+
+  &-icon {
+    height: 32px;
+    width: 32px;
+    fill: var(--weui-FG-3);
+  }
+}

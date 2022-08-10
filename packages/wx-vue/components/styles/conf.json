@@ -49,6 +49,9 @@
     "transition",
     "half-screen-dialog"
   ],
+  "image": [
+    "image"
+  ],
   "input": [
     "cell",
     "form",
