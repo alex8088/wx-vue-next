@@ -121,6 +121,9 @@
   "tabs": [
     "tabs"
   ],
+  "tag": [
+    "tag"
+  ],
   "textarea": [
     "cell",
     "form"

@@ -1,0 +1,110 @@
+@import "../../base/theme/fn";
+
+@weuiTagPadding: 0 8px;
+@weuiTagBorderRaduis: 2px;
+@weuiTagDefaultFontSize: 12px;
+
+.weui-tag {
+  --tag-bg-color: #f2f0f0;
+  --tag-text-color: #333;
+  --tag-border-color: #e5e5e5;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--tag-bg-color);
+  color: var(--tag-text-color);
+  padding: @weuiTagPadding;
+  box-sizing: border-box;
+  font-size: @weuiTagDefaultFontSize;
+  line-height: 1;
+  border: 1px solid transparent;
+  border-radius: @weuiTagBorderRaduis;
+  white-space: nowrap;
+
+  &_large {
+    height: 32px;
+    font-size: 14px;
+
+    .weui-icon-close-thin {
+      height: 14px;
+      width: 14px;
+    }
+  }
+
+  &_medium {
+    height: 24px;
+
+    .weui-icon-close-thin {
+      height: 12px;
+      width: 12px;
+    }
+  }
+
+  &_small {
+    height: 20px;
+
+    .weui-icon-close-thin {
+      height: 12px;
+      width: 12px;
+    }
+  }
+
+  &_bordered {
+    border-color: var(--tag-border-color);
+  }
+
+  &_round {
+    border-radius: 999px;
+  }
+
+  .setTagColor(@color) {
+    --tag-bg-color: tint(@color, 90%);
+    --tag-border-color: tint(@color, 50%);
+    --tag-text-color: @color;
+  }
+
+  &_red {
+    .setTagColor(#fa5151);
+  }
+
+  &_orange {
+    .setTagColor(#fa9d3b);
+  }
+
+  &_yellow {
+    .setTagColor(#ffc300);
+  }
+
+  &_green {
+    .setTagColor(#06ae56);
+  }
+
+  &_blue {
+    .setTagColor(#10aeff);
+  }
+
+  &_indego {
+    .setTagColor(#1485ee);
+  }
+
+  &_purple {
+    .setTagColor(#6467f0);
+  }
+
+  &_cyan {
+    .setTagColor(#14c9c9);
+  }
+
+  &_magenta {
+    .setTagColor(#f5319d);
+  }
+
+  &_gray {
+    .setTagColor(#86909c);
+  }
+
+  .weui-icon-close-thin {
+    position: relative;
+    margin-left: 2px;
+  }
+}
