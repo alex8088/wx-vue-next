@@ -31,7 +31,8 @@ const componentGroups = [
       'Link',
       'Loading',
       'Progress',
-      'Skeleton'
+      'Skeleton',
+      'Tag'
     ]
   },
   {
