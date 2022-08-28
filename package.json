@@ -15,7 +15,10 @@
     "build:style": "pnpm run -C packages/wx-vue build:style",
     "demo:dev": "pnpm run -C packages/demo dev",
     "demo:preview": "pnpm run -C packages/demo preview",
-    "demo:build": "pnpm run -C packages/demo build"
+    "demo:build": "pnpm run -C packages/demo build",
+    "docs:dev": "pnpm run -C packages/docs dev",
+    "docs:preview": "pnpm run -C packages/docs preview",
+    "docs:build": "pnpm run -C packages/docs build"
   },
   "simple-git-hooks": {
     "pre-commit": "npx lint-staged",
